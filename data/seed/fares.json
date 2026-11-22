@@ -1,0 +1,222 @@
+[
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "metro-silver-1",
+    "mode": "metro",
+    "zone_rule": "1",
+    "price_aed": 3.0,
+    "card_type": "silver",
+    "notes": "One zone, Silver Nol."
+  },
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "metro-silver-2",
+    "mode": "metro",
+    "zone_rule": "2",
+    "price_aed": 5.0,
+    "card_type": "silver",
+    "notes": "Two adjacent zones, Silver Nol."
+  },
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "metro-silver-3plus",
+    "mode": "metro",
+    "zone_rule": "3+",
+    "price_aed": 7.5,
+    "card_type": "silver",
+    "notes": "More than two zones, Silver Nol."
+  },
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "metro-gold-1",
+    "mode": "metro",
+    "zone_rule": "1",
+    "price_aed": 6.0,
+    "card_type": "gold",
+    "notes": "One zone, Gold Nol. Double the Silver fare."
+  },
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "metro-gold-2",
+    "mode": "metro",
+    "zone_rule": "2",
+    "price_aed": 10.0,
+    "card_type": "gold",
+    "notes": "Two adjacent zones, Gold Nol."
+  },
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "metro-gold-3plus",
+    "mode": "metro",
+    "zone_rule": "3+",
+    "price_aed": 15.0,
+    "card_type": "gold",
+    "notes": "More than two zones, Gold Nol."
+  },
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "metro-red-1",
+    "mode": "metro",
+    "zone_rule": "1",
+    "price_aed": 4.0,
+    "card_type": "red",
+    "notes": "One zone, Red Ticket."
+  },
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "metro-red-2",
+    "mode": "metro",
+    "zone_rule": "2",
+    "price_aed": 6.0,
+    "card_type": "red",
+    "notes": "Two adjacent zones, Red Ticket."
+  },
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "metro-red-3plus",
+    "mode": "metro",
+    "zone_rule": "3+",
+    "price_aed": 8.5,
+    "card_type": "red",
+    "notes": "More than two zones, Red Ticket."
+  },
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "pass-silver-7day-1",
+    "mode": "metro",
+    "zone_rule": "1",
+    "price_aed": 50.0,
+    "card_type": "silver_7day",
+    "notes": "7-day pass, one zone, Silver."
+  },
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "pass-silver-7day-2",
+    "mode": "metro",
+    "zone_rule": "2",
+    "price_aed": 80.0,
+    "card_type": "silver_7day",
+    "notes": "7-day pass, two zones, Silver."
+  },
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "pass-silver-7day-all",
+    "mode": "metro",
+    "zone_rule": "all",
+    "price_aed": 110.0,
+    "card_type": "silver_7day",
+    "notes": "7-day pass, all zones, Silver."
+  },
+  {
+    "provenance": "verified",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "nol-silver-card",
+    "mode": "nol_card",
+    "zone_rule": "purchase",
+    "price_aed": 25.0,
+    "card_type": "silver",
+    "notes": "Silver card price. AED 19 of the AED 25 is stored credit."
+  },
+  {
+    "provenance": "estimated",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "pass-1day",
+    "mode": "metro",
+    "zone_rule": "all",
+    "price_aed": 20.0,
+    "card_type": "red_1day",
+    "notes": "1-day Travel Pass quoted at about AED 20 on a Red Ticket. docs/research.md could not confirm this on the RTA fare table."
+  },
+  {
+    "provenance": "estimated",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "nol-red-card",
+    "mode": "nol_card",
+    "zone_rule": "purchase",
+    "price_aed": 2.0,
+    "card_type": "red",
+    "notes": "Red Ticket price from a third-party figure in docs/research.md, not the RTA table."
+  },
+  {
+    "provenance": "estimated",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "taxi-flag-day",
+    "mode": "taxi",
+    "zone_rule": "flag_06_22",
+    "price_aed": 5.0,
+    "card_type": "street_hail",
+    "notes": "Daytime street-hail flag fall. Sources in docs/research.md differ, so this stays estimated."
+  },
+  {
+    "provenance": "estimated",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "taxi-flag-night",
+    "mode": "taxi",
+    "zone_rule": "flag_22_06",
+    "price_aed": 5.5,
+    "card_type": "street_hail",
+    "notes": "Night street-hail flag fall. Estimated from the same unchecked tariff notes."
+  },
+  {
+    "provenance": "estimated",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "taxi-per-km",
+    "mode": "taxi",
+    "zone_rule": "per_km",
+    "price_aed": 2.45,
+    "card_type": "street_hail",
+    "notes": "Higher of the two per-km rates in docs/research.md (AED 2.45). Use this for budgeting."
+  },
+  {
+    "provenance": "estimated",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "taxi-minimum",
+    "mode": "taxi",
+    "zone_rule": "minimum",
+    "price_aed": 12.0,
+    "card_type": "street_hail",
+    "notes": "Street-hail minimum fare. Estimated."
+  },
+  {
+    "provenance": "estimated",
+    "source": "RTA Nol fare table as recorded in docs/research.md on 2026-11-16. https://www.rta.ae",
+    "as_of": "2026-11-16",
+    "id": "abra-crossing",
+    "mode": "ferry",
+    "zone_rule": "fixed",
+    "price_aed": 1.0,
+    "card_type": "cash",
+    "notes": "Abra crossing, about AED 1. Not rechecked on an RTA page."
+  }
+]

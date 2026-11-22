@@ -1,0 +1,65 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+credentials*.json
+secrets.json
+service-account*.json
+id_rsa
+id_ed25519
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.hypothesis/
+dist/
+build/
+*.log
+logs/
+
+# Generated data and local caches (seed JSON is committed)
+evals/runs/
+evals/latest.json
+data/raw/
+data/*.sqlite
+services/planner-api/dubai.sqlite
+data/*.sqlite-journal
+data/*.sqlite-wal
+data/*.sqlite-shm
+.cache/
+.diskcache/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+npm-debug.log*
+
+# Vercel
+.vercel/
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

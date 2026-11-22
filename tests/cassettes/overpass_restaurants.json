@@ -1,0 +1,15 @@
+{
+  "elements": [
+    {
+      "type": "node",
+      "lat": 25.2705327,
+      "lon": 55.3039693,
+      "tags": {
+        "name": "Pak Liyari Restaurant",
+        "amenity": "restaurant",
+        "cuisine": "pakistani",
+        "opening_hours": "12:00-23:00"
+      }
+    }
+  ]
+}

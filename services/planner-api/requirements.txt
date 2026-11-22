@@ -1,0 +1,3 @@
+# Full planner stack. The canonical dependency list is the repo-root pyproject.toml.
+# Installed from this directory, the editable path reaches that project.
+-e ../..

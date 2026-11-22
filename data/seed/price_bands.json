@@ -1,0 +1,102 @@
+[
+  {
+    "provenance": "estimated",
+    "source": "Observed menu bands and the RTA taxi notes in docs/research.md, checked 2026-11-16. These bands price an unnamed meal or a typical extra. They are not a quoted bill.",
+    "as_of": "2026-11-16",
+    "id": "band-food-budget",
+    "category": "food",
+    "tier": "budget",
+    "min_aed": 25.0,
+    "max_aed": 45.0
+  },
+  {
+    "provenance": "estimated",
+    "source": "Observed menu bands and the RTA taxi notes in docs/research.md, checked 2026-11-16. These bands price an unnamed meal or a typical extra. They are not a quoted bill.",
+    "as_of": "2026-11-16",
+    "id": "band-food-mid",
+    "category": "food",
+    "tier": "mid",
+    "min_aed": 70.0,
+    "max_aed": 140.0
+  },
+  {
+    "provenance": "estimated",
+    "source": "Observed menu bands and the RTA taxi notes in docs/research.md, checked 2026-11-16. These bands price an unnamed meal or a typical extra. They are not a quoted bill.",
+    "as_of": "2026-11-16",
+    "id": "band-food-upscale",
+    "category": "food",
+    "tier": "upscale",
+    "min_aed": 180.0,
+    "max_aed": 400.0
+  },
+  {
+    "provenance": "estimated",
+    "source": "Observed menu bands and the RTA taxi notes in docs/research.md, checked 2026-11-16. These bands price an unnamed meal or a typical extra. They are not a quoted bill.",
+    "as_of": "2026-11-16",
+    "id": "band-coffee-any",
+    "category": "coffee",
+    "tier": "any",
+    "min_aed": 12.0,
+    "max_aed": 28.0
+  },
+  {
+    "provenance": "estimated",
+    "source": "Observed menu bands and the RTA taxi notes in docs/research.md, checked 2026-11-16. These bands price an unnamed meal or a typical extra. They are not a quoted bill.",
+    "as_of": "2026-11-16",
+    "id": "band-water-any",
+    "category": "water",
+    "tier": "any",
+    "min_aed": 2.0,
+    "max_aed": 8.0
+  },
+  {
+    "provenance": "estimated",
+    "source": "Observed menu bands and the RTA taxi notes in docs/research.md, checked 2026-11-16. These bands price an unnamed meal or a typical extra. They are not a quoted bill.",
+    "as_of": "2026-11-16",
+    "id": "band-activity-free",
+    "category": "activity",
+    "tier": "free",
+    "min_aed": 0.0,
+    "max_aed": 0.0
+  },
+  {
+    "provenance": "estimated",
+    "source": "Observed menu bands and the RTA taxi notes in docs/research.md, checked 2026-11-16. These bands price an unnamed meal or a typical extra. They are not a quoted bill.",
+    "as_of": "2026-11-16",
+    "id": "band-activity-budget",
+    "category": "activity",
+    "tier": "budget",
+    "min_aed": 20.0,
+    "max_aed": 60.0
+  },
+  {
+    "provenance": "estimated",
+    "source": "Observed menu bands and the RTA taxi notes in docs/research.md, checked 2026-11-16. These bands price an unnamed meal or a typical extra. They are not a quoted bill.",
+    "as_of": "2026-11-16",
+    "id": "band-activity-mid",
+    "category": "activity",
+    "tier": "mid",
+    "min_aed": 70.0,
+    "max_aed": 180.0
+  },
+  {
+    "provenance": "estimated",
+    "source": "Observed menu bands and the RTA taxi notes in docs/research.md, checked 2026-11-16. These bands price an unnamed meal or a typical extra. They are not a quoted bill.",
+    "as_of": "2026-11-16",
+    "id": "band-activity-upscale",
+    "category": "activity",
+    "tier": "upscale",
+    "min_aed": 180.0,
+    "max_aed": 400.0
+  },
+  {
+    "provenance": "estimated",
+    "source": "Observed menu bands and the RTA taxi notes in docs/research.md, checked 2026-11-16. These bands price an unnamed meal or a typical extra. They are not a quoted bill.",
+    "as_of": "2026-11-16",
+    "id": "band-taxi_trip-typical",
+    "category": "taxi_trip",
+    "tier": "typical",
+    "min_aed": 12.0,
+    "max_aed": 45.0
+  }
+]

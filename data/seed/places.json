@@ -1,0 +1,2680 @@
+[
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Al Fahidi Historical Neighbourhood Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-al-fahidi-historical-neighbourhood",
+    "name": "Al Fahidi Historical Neighbourhood",
+    "category": "neighbourhood",
+    "area": "Old Dubai",
+    "lat": 25.2642301,
+    "lng": 55.30017,
+    "tags": [
+      "culture"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "daily": "24 hours"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Dubai Museum Al Fahidi Fort' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-dubai-museum",
+    "name": "Dubai Museum",
+    "category": "museum",
+    "area": "Old Dubai",
+    "lat": 25.2635211,
+    "lng": 55.2971826,
+    "tags": [
+      "culture"
+    ],
+    "price_aed": {
+      "min_aed": 3.0,
+      "max_aed": 30.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 75,
+    "opening_hours": {
+      "mon": "09:00-17:00",
+      "tue": "09:00-17:00",
+      "wed": "09:00-17:00",
+      "thu": "09:00-17:00",
+      "fri": "09:00-17:00",
+      "sat": "09:00-17:00",
+      "sun": "09:00-17:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Sheikh Mohammed Centre for Cultural Understanding Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-sheikh-mohammed-centre-for-cultural-understanding",
+    "name": "Sheikh Mohammed Centre for Cultural Understanding",
+    "category": "museum",
+    "area": "Old Dubai",
+    "lat": 25.2641433,
+    "lng": 55.3007213,
+    "tags": [
+      "culture"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "mon": "09:00-17:00",
+      "tue": "09:00-17:00",
+      "wed": "09:00-17:00",
+      "thu": "09:00-17:00",
+      "fri": "09:00-17:00",
+      "sat": "09:00-17:00",
+      "sun": "09:00-17:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Coffee Museum Al Fahidi Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-coffee-museum",
+    "name": "Coffee Museum",
+    "category": "museum",
+    "area": "Old Dubai",
+    "lat": 25.2637077,
+    "lng": 55.3000981,
+    "tags": [
+      "culture"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 45,
+    "opening_hours": {
+      "mon": "09:00-17:00",
+      "tue": "09:00-17:00",
+      "wed": "09:00-17:00",
+      "thu": "09:00-17:00",
+      "fri": "09:00-17:00",
+      "sat": "09:00-17:00",
+      "sun": "09:00-17:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Al Shindagha Museum Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-al-shindagha-museum",
+    "name": "Al Shindagha Museum",
+    "category": "museum",
+    "area": "Old Dubai",
+    "lat": 25.2664268,
+    "lng": 55.2894519,
+    "tags": [
+      "culture"
+    ],
+    "price_aed": {
+      "min_aed": 20.0,
+      "max_aed": 50.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Gold Souk Deira Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-gold-souk",
+    "name": "Gold Souk",
+    "category": "market",
+    "area": "Old Dubai",
+    "lat": 25.2699801,
+    "lng": 55.2981249,
+    "tags": [
+      "culture",
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Spice Souk Deira Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-spice-souk",
+    "name": "Spice Souk",
+    "category": "market",
+    "area": "Old Dubai",
+    "lat": 25.2675627,
+    "lng": 55.2970588,
+    "tags": [
+      "culture",
+      "shopping",
+      "food"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 45,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Textile Souk Bur Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-textile-souk",
+    "name": "Textile Souk",
+    "category": "market",
+    "area": "Old Dubai",
+    "lat": 25.2641413,
+    "lng": 55.296206,
+    "tags": [
+      "culture",
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 45,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Heritage Village Bur Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-heritage-village",
+    "name": "Heritage Village",
+    "category": "neighbourhood",
+    "area": "Old Dubai",
+    "lat": 25.2698527,
+    "lng": 55.2911607,
+    "tags": [
+      "culture"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "mon": "09:00-21:00",
+      "tue": "09:00-21:00",
+      "wed": "09:00-21:00",
+      "thu": "09:00-21:00",
+      "fri": "09:00-21:00",
+      "sat": "09:00-21:00",
+      "sun": "09:00-21:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Jumeirah Mosque Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-jumeirah-mosque",
+    "name": "Jumeirah Mosque",
+    "category": "mosque",
+    "area": "Jumeirah",
+    "lat": 25.2340631,
+    "lng": 55.2654821,
+    "tags": [
+      "culture"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 45,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Etihad Museum Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-etihad-museum",
+    "name": "Etihad Museum",
+    "category": "museum",
+    "area": "Jumeirah",
+    "lat": 25.2414327,
+    "lng": 55.269331,
+    "tags": [
+      "culture"
+    ],
+    "price_aed": {
+      "min_aed": 15.0,
+      "max_aed": 40.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 75,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Alserkal Avenue Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-alserkal-avenue",
+    "name": "Alserkal Avenue",
+    "category": "neighbourhood",
+    "area": "Al Quoz",
+    "lat": 25.1418676,
+    "lng": 55.2255782,
+    "tags": [
+      "culture"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Concrete Alserkal Avenue Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-concrete",
+    "name": "Concrete",
+    "category": "gallery",
+    "area": "Al Quoz",
+    "lat": 25.1221098,
+    "lng": 55.2135281,
+    "tags": [
+      "culture"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 45,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Dubai Design District' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-dubai-design-district",
+    "name": "Dubai Design District",
+    "category": "neighbourhood",
+    "area": "Al Quoz",
+    "lat": 25.1883375,
+    "lng": 55.2974839,
+    "tags": [
+      "culture",
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Al Seef Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-al-seef",
+    "name": "Al Seef",
+    "category": "neighbourhood",
+    "area": "Dubai Creek",
+    "lat": 25.2607365,
+    "lng": 55.3091142,
+    "tags": [
+      "culture",
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "daily": "24 hours"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Adult price AED 189 comes from a comparison site recorded in docs/research.md on 2026-11-16, not from a fresh read of the operator page, so provenance stays estimated. Nominatim query 'Burj Khalifa Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-burj-khalifa-at-the-top",
+    "name": "Burj Khalifa At the Top",
+    "category": "attraction",
+    "area": "Downtown",
+    "lat": 25.1970336,
+    "lng": 55.2741329,
+    "tags": [
+      "landmark"
+    ],
+    "price_aed": {
+      "min_aed": 189.0,
+      "max_aed": 189.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "10:00-00:00",
+      "tue": "10:00-00:00",
+      "wed": "10:00-00:00",
+      "thu": "10:00-00:00",
+      "fri": "10:00-00:00",
+      "sat": "10:00-00:00",
+      "sun": "10:00-00:00"
+    },
+    "indoor": true,
+    "timed_entry": true,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": "https://www.burjkhalifa.ae"
+  },
+  {
+    "provenance": "verified",
+    "source": "Adult ticket AED 50 verified from https://www.dubaiframe.ae on 2026-11-16 (docs/research.md). The stored range is the adult ticket, not the AED 20 child ticket. Nominatim query 'Dubai Frame' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-dubai-frame",
+    "name": "Dubai Frame",
+    "category": "attraction",
+    "area": "Zabeel",
+    "lat": 25.235456,
+    "lng": 55.3003671,
+    "tags": [
+      "landmark"
+    ],
+    "price_aed": {
+      "min_aed": 50.0,
+      "max_aed": 50.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "mon": "09:00-21:00",
+      "tue": "09:00-21:00",
+      "wed": "09:00-21:00",
+      "thu": "09:00-21:00",
+      "fri": "09:00-21:00",
+      "sat": "09:00-21:00",
+      "sun": "09:00-21:00"
+    },
+    "indoor": true,
+    "timed_entry": true,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": "https://www.dubaiframe.ae"
+  },
+  {
+    "provenance": "estimated",
+    "source": "Closed for an overhaul since early September 2026. Expected to reopen in Q1 2027 with no date set and no tickets on sale. The last adult price AED 169 is historical, so provenance stays estimated (docs/research.md, checked 2026-11-16). Nominatim query 'Museum of the Future Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-museum-of-the-future",
+    "name": "Museum of the Future",
+    "category": "museum",
+    "area": "Downtown",
+    "lat": 25.2191545,
+    "lng": 55.2818746,
+    "tags": [
+      "landmark"
+    ],
+    "price_aed": {
+      "min_aed": 169.0,
+      "max_aed": 169.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": true,
+    "operational_status": "reopening",
+    "status_as_of": "2026-09-01",
+    "official_url": "https://museumofthefuture.ae"
+  },
+  {
+    "provenance": "estimated",
+    "source": "Adult price from AED 145 comes from a comparison site recorded in docs/research.md on 2026-11-16, not from a fresh read of the operator page, so provenance stays estimated. Nominatim query 'Ain Dubai Bluewaters' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-ain-dubai",
+    "name": "Ain Dubai",
+    "category": "attraction",
+    "area": "Marina / JBR",
+    "lat": 25.0800521,
+    "lng": 55.1237893,
+    "tags": [
+      "landmark"
+    ],
+    "price_aed": {
+      "min_aed": 145.0,
+      "max_aed": 145.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": true,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Adult price AED 115 comes from a comparison site recorded in docs/research.md on 2026-11-16, not from a fresh read of the operator page, so provenance stays estimated. Nominatim query 'The View at the Palm Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-the-view-at-the-palm",
+    "name": "The View at The Palm",
+    "category": "viewpoint",
+    "area": "Palm",
+    "lat": 25.1139697,
+    "lng": 55.1398328,
+    "tags": [
+      "landmark"
+    ],
+    "price_aed": {
+      "min_aed": 115.0,
+      "max_aed": 115.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": true,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Adult price AED 89 comes from a comparison site recorded in docs/research.md on 2026-11-16, not from a fresh read of the operator page, so provenance stays estimated. Nominatim query 'Sky Views Observatory Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-sky-views-dubai",
+    "name": "Sky Views Dubai",
+    "category": "viewpoint",
+    "area": "Downtown",
+    "lat": 25.2014703,
+    "lng": 55.270658,
+    "tags": [
+      "landmark"
+    ],
+    "price_aed": {
+      "min_aed": 89.0,
+      "max_aed": 89.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 45,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": true,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Burj Al Arab Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-burj-al-arab",
+    "name": "Burj Al Arab",
+    "category": "landmark",
+    "area": "Jumeirah",
+    "lat": 25.1414332,
+    "lng": 55.1851505,
+    "tags": [
+      "landmark",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 30,
+    "opening_hours": {
+      "daily": "24 hours"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Palm Jumeirah Boardwalk' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-palm-jumeirah-boardwalk",
+    "name": "Palm Jumeirah Boardwalk",
+    "category": "neighbourhood",
+    "area": "Palm",
+    "lat": 25.1330119,
+    "lng": 55.1174319,
+    "tags": [
+      "landmark",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "daily": "24 hours"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Dubai Water Canal' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-dubai-water-canal",
+    "name": "Dubai Water Canal",
+    "category": "neighbourhood",
+    "area": "Business Bay",
+    "lat": 25.1852211,
+    "lng": 55.2533307,
+    "tags": [
+      "landmark",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "daily": "24 hours"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Bluewaters Island Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-bluewaters-island",
+    "name": "Bluewaters Island",
+    "category": "neighbourhood",
+    "area": "Marina / JBR",
+    "lat": 25.0799056,
+    "lng": 55.1219161,
+    "tags": [
+      "landmark",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "daily": "24 hours"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Ras Al Khor Wildlife Sanctuary' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-ras-al-khor-wildlife-sanctuary",
+    "name": "Ras Al Khor Wildlife Sanctuary",
+    "category": "wildlife",
+    "area": "Dubai Creek",
+    "lat": 25.1928773,
+    "lng": 55.3257631,
+    "tags": [
+      "landmark",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "mon": "09:00-17:00",
+      "tue": "09:00-17:00",
+      "wed": "09:00-17:00",
+      "thu": "09:00-17:00",
+      "fri": "09:00-17:00",
+      "sat": "09:00-17:00",
+      "sun": "09:00-17:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'The Pointe Palm Jumeirah' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-the-pointe",
+    "name": "The Pointe",
+    "category": "neighbourhood",
+    "area": "Palm",
+    "lat": 25.126863,
+    "lng": 55.1217519,
+    "tags": [
+      "landmark",
+      "shopping",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "10:00-00:00",
+      "tue": "10:00-00:00",
+      "wed": "10:00-00:00",
+      "thu": "10:00-00:00",
+      "fri": "10:00-00:00",
+      "sat": "10:00-00:00",
+      "sun": "10:00-00:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Emirates Towers Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-emirates-towers",
+    "name": "Emirates Towers",
+    "category": "landmark",
+    "area": "Downtown",
+    "lat": 25.2175256,
+    "lng": 55.2828969,
+    "tags": [
+      "landmark"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 30,
+    "opening_hours": {
+      "daily": "24 hours"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Souk Al Bahar Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-souk-al-bahar",
+    "name": "Souk Al Bahar",
+    "category": "market",
+    "area": "Downtown",
+    "lat": 25.1947704,
+    "lng": 55.2770144,
+    "tags": [
+      "landmark",
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "mon": "10:00-00:00",
+      "tue": "10:00-00:00",
+      "wed": "10:00-00:00",
+      "thu": "10:00-00:00",
+      "fri": "10:00-00:00",
+      "sat": "10:00-00:00",
+      "sun": "10:00-00:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Dubai Opera' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-dubai-opera",
+    "name": "Dubai Opera",
+    "category": "venue",
+    "area": "Downtown",
+    "lat": 25.1956562,
+    "lng": 55.2719522,
+    "tags": [
+      "landmark"
+    ],
+    "price_aed": {
+      "min_aed": 150.0,
+      "max_aed": 500.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 150,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Kite Beach Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-kite-beach",
+    "name": "Kite Beach",
+    "category": "beach",
+    "area": "Jumeirah",
+    "lat": 25.1630042,
+    "lng": 55.2067193,
+    "tags": [
+      "beach",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "daily": "daylight"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Jumeirah Beach Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-jumeirah-public-beach",
+    "name": "Jumeirah Public Beach",
+    "category": "beach",
+    "area": "Jumeirah",
+    "lat": 25.1850059,
+    "lng": 55.223492,
+    "tags": [
+      "beach",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "daily": "daylight"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Sunset Beach Dubai Umm Suqeim' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-sunset-beach",
+    "name": "Sunset Beach",
+    "category": "beach",
+    "area": "Jumeirah",
+    "lat": 25.1481136,
+    "lng": 55.1941022,
+    "tags": [
+      "beach",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "daily": "daylight"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'La Mer Beach Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-la-mer-beach",
+    "name": "La Mer Beach",
+    "category": "beach",
+    "area": "Jumeirah",
+    "lat": 25.2316202,
+    "lng": 55.2591749,
+    "tags": [
+      "beach",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "daily": "daylight"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'JBR Beach Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-jbr-beach",
+    "name": "JBR Beach",
+    "category": "beach",
+    "area": "Marina / JBR",
+    "lat": 25.0721967,
+    "lng": 55.1296184,
+    "tags": [
+      "beach",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "daily": "daylight"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Al Mamzar Beach' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-al-mamzar-beach-park",
+    "name": "Al Mamzar Beach Park",
+    "category": "beach",
+    "area": "Al Mamzar",
+    "lat": 25.3053265,
+    "lng": 55.3544341,
+    "tags": [
+      "beach",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 5.0,
+      "max_aed": 5.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 150,
+    "opening_hours": {
+      "mon": "08:00-22:00",
+      "tue": "08:00-22:00",
+      "wed": "08:00-22:00",
+      "thu": "08:00-22:00",
+      "fri": "08:00-22:00",
+      "sat": "08:00-22:00",
+      "sun": "08:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Palm West Beach Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-palm-west-beach",
+    "name": "Palm West Beach",
+    "category": "beach",
+    "area": "Palm",
+    "lat": 25.1113458,
+    "lng": 55.138386,
+    "tags": [
+      "beach",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "daily": "daylight"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Zabeel Park Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-zabeel-park",
+    "name": "Zabeel Park",
+    "category": "park",
+    "area": "Zabeel",
+    "lat": 25.2352958,
+    "lng": 55.2979262,
+    "tags": [
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "08:00-22:00",
+      "tue": "08:00-22:00",
+      "wed": "08:00-22:00",
+      "thu": "08:00-22:00",
+      "fri": "08:00-22:00",
+      "sat": "08:00-22:00",
+      "sun": "08:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Safa Park Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-safa-park",
+    "name": "Safa Park",
+    "category": "park",
+    "area": "Jumeirah",
+    "lat": 25.1854645,
+    "lng": 55.2447055,
+    "tags": [
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "08:00-22:00",
+      "tue": "08:00-22:00",
+      "wed": "08:00-22:00",
+      "thu": "08:00-22:00",
+      "fri": "08:00-22:00",
+      "sat": "08:00-22:00",
+      "sun": "08:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Creek Park Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-creek-park",
+    "name": "Creek Park",
+    "category": "park",
+    "area": "Dubai Creek",
+    "lat": 25.24085,
+    "lng": 55.325918,
+    "tags": [
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 5.0,
+      "max_aed": 5.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "08:00-22:00",
+      "tue": "08:00-22:00",
+      "wed": "08:00-22:00",
+      "thu": "08:00-22:00",
+      "fri": "08:00-22:00",
+      "sat": "08:00-22:00",
+      "sun": "08:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Al Qudra Lakes Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-al-qudra-lakes",
+    "name": "Al Qudra Lakes",
+    "category": "park",
+    "area": "Al Qudra",
+    "lat": 24.8347634,
+    "lng": 55.3759762,
+    "tags": [
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "daily": "daylight"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Mushrif Park Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-mushrif-park",
+    "name": "Mushrif Park",
+    "category": "park",
+    "area": "Mushrif",
+    "lat": 25.2159957,
+    "lng": 55.4607436,
+    "tags": [
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 5.0,
+      "max_aed": 5.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "mon": "08:00-22:00",
+      "tue": "08:00-22:00",
+      "wed": "08:00-22:00",
+      "thu": "08:00-22:00",
+      "fri": "08:00-22:00",
+      "sat": "08:00-22:00",
+      "sun": "08:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Dubai Miracle Garden' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-dubai-miracle-garden",
+    "name": "Dubai Miracle Garden",
+    "category": "park",
+    "area": "Dubailand",
+    "lat": 25.0597235,
+    "lng": 55.2445979,
+    "tags": [
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 40.0,
+      "max_aed": 80.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "09:00-21:00",
+      "tue": "09:00-21:00",
+      "wed": "09:00-21:00",
+      "thu": "09:00-21:00",
+      "fri": "09:00-21:00",
+      "sat": "09:00-21:00",
+      "sun": "09:00-21:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'The Dubai Mall' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-the-dubai-mall",
+    "name": "The Dubai Mall",
+    "category": "mall",
+    "area": "Downtown",
+    "lat": 25.197044,
+    "lng": 55.2789516,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 180,
+    "opening_hours": {
+      "mon": "10:00-00:00",
+      "tue": "10:00-00:00",
+      "wed": "10:00-00:00",
+      "thu": "10:00-00:00",
+      "fri": "10:00-00:00",
+      "sat": "10:00-00:00",
+      "sun": "10:00-00:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Mall of the Emirates Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-mall-of-the-emirates",
+    "name": "Mall of the Emirates",
+    "category": "mall",
+    "area": "Al Barsha",
+    "lat": 25.1179818,
+    "lng": 55.2003754,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 180,
+    "opening_hours": {
+      "mon": "10:00-00:00",
+      "tue": "10:00-00:00",
+      "wed": "10:00-00:00",
+      "thu": "10:00-00:00",
+      "fri": "10:00-00:00",
+      "sat": "10:00-00:00",
+      "sun": "10:00-00:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Ibn Battuta Mall Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-ibn-battuta-mall",
+    "name": "Ibn Battuta Mall",
+    "category": "mall",
+    "area": "Jebel Ali",
+    "lat": 25.0445797,
+    "lng": 55.1205767,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Dubai Marina Mall' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-dubai-marina-mall",
+    "name": "Dubai Marina Mall",
+    "category": "mall",
+    "area": "Marina / JBR",
+    "lat": 25.0766362,
+    "lng": 55.1402187,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Deira City Centre Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-deira-city-centre",
+    "name": "Deira City Centre",
+    "category": "mall",
+    "area": "Old Dubai",
+    "lat": 25.2522175,
+    "lng": 55.3322535,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Nakheel Mall Palm Jumeirah' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-nakheel-mall",
+    "name": "Nakheel Mall",
+    "category": "mall",
+    "area": "Palm",
+    "lat": 25.1139813,
+    "lng": 55.1383405,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Dubai Hills Mall' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-dubai-hills-mall",
+    "name": "Dubai Hills Mall",
+    "category": "mall",
+    "area": "Dubai Hills",
+    "lat": 25.1016705,
+    "lng": 55.2399292,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 150,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'City Centre Mirdif Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-city-centre-mirdif",
+    "name": "City Centre Mirdif",
+    "category": "mall",
+    "area": "Mirdif",
+    "lat": 25.2160215,
+    "lng": 55.4080668,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'BurJuman Centre Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-burjuman",
+    "name": "BurJuman",
+    "category": "mall",
+    "area": "Old Dubai",
+    "lat": 25.25499,
+    "lng": 55.303941,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'IMG Worlds of Adventure Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-img-worlds-of-adventure",
+    "name": "IMG Worlds of Adventure",
+    "category": "theme_park",
+    "area": "Dubailand",
+    "lat": 25.0813943,
+    "lng": 55.3181342,
+    "tags": [
+      "family"
+    ],
+    "price_aed": {
+      "min_aed": 250.0,
+      "max_aed": 399.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 300,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": true,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Motiongate Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-motiongate-dubai",
+    "name": "Motiongate Dubai",
+    "category": "theme_park",
+    "area": "Dubailand",
+    "lat": 24.9216634,
+    "lng": 55.0028777,
+    "tags": [
+      "family"
+    ],
+    "price_aed": {
+      "min_aed": 250.0,
+      "max_aed": 350.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 300,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": true,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Legoland Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-legoland-dubai",
+    "name": "Legoland Dubai",
+    "category": "theme_park",
+    "area": "Dubailand",
+    "lat": 24.9188167,
+    "lng": 55.0121902,
+    "tags": [
+      "family"
+    ],
+    "price_aed": {
+      "min_aed": 250.0,
+      "max_aed": 350.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 300,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": true,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Ski Dubai Mall of the Emirates' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-ski-dubai",
+    "name": "Ski Dubai",
+    "category": "attraction",
+    "area": "Al Barsha",
+    "lat": 25.1173928,
+    "lng": 55.1981449,
+    "tags": [
+      "family"
+    ],
+    "price_aed": {
+      "min_aed": 180.0,
+      "max_aed": 250.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": true,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'KidZania Dubai Mall' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-kidzania-dubai",
+    "name": "KidZania Dubai",
+    "category": "attraction",
+    "area": "Downtown",
+    "lat": 25.1950306,
+    "lng": 55.279989,
+    "tags": [
+      "family"
+    ],
+    "price_aed": {
+      "min_aed": 150.0,
+      "max_aed": 220.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 180,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": true,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'The Green Planet City Walk Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-the-green-planet",
+    "name": "The Green Planet",
+    "category": "attraction",
+    "area": "Jumeirah",
+    "lat": 25.2060627,
+    "lng": 55.2603991,
+    "tags": [
+      "family"
+    ],
+    "price_aed": {
+      "min_aed": 100.0,
+      "max_aed": 160.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 75,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Wild Wadi Waterpark Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-wild-wadi-waterpark",
+    "name": "Wild Wadi Waterpark",
+    "category": "water_park",
+    "area": "Jumeirah",
+    "lat": 25.1396485,
+    "lng": 55.189428,
+    "tags": [
+      "family",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 200.0,
+      "max_aed": 320.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 240,
+    "opening_hours": {
+      "mon": "10:00-18:00",
+      "tue": "10:00-18:00",
+      "wed": "10:00-18:00",
+      "thu": "10:00-18:00",
+      "fri": "10:00-18:00",
+      "sat": "10:00-18:00",
+      "sun": "10:00-18:00"
+    },
+    "indoor": false,
+    "timed_entry": true,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Aquaventure Waterpark Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-aquaventure-waterpark",
+    "name": "Aquaventure Waterpark",
+    "category": "water_park",
+    "area": "Palm",
+    "lat": 25.134599,
+    "lng": 55.1220701,
+    "tags": [
+      "family",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 250.0,
+      "max_aed": 400.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 300,
+    "opening_hours": {
+      "mon": "10:00-18:00",
+      "tue": "10:00-18:00",
+      "wed": "10:00-18:00",
+      "thu": "10:00-18:00",
+      "fri": "10:00-18:00",
+      "sat": "10:00-18:00",
+      "sun": "10:00-18:00"
+    },
+    "indoor": false,
+    "timed_entry": true,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Lost Chambers Atlantis' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-the-lost-chambers-aquarium",
+    "name": "The Lost Chambers Aquarium",
+    "category": "attraction",
+    "area": "Palm",
+    "lat": 25.131799,
+    "lng": 55.118535,
+    "tags": [
+      "family"
+    ],
+    "price_aed": {
+      "min_aed": 100.0,
+      "max_aed": 160.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Barasti Beach Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-barasti",
+    "name": "Barasti",
+    "category": "venue",
+    "area": "Marina / JBR",
+    "lat": 25.091774,
+    "lng": 55.1458121,
+    "tags": [
+      "nightlife",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 180,
+    "opening_hours": {
+      "mon": "12:00-02:00",
+      "tue": "12:00-02:00",
+      "wed": "12:00-02:00",
+      "thu": "12:00-02:00",
+      "fri": "12:00-02:00",
+      "sat": "12:00-02:00",
+      "sun": "12:00-02:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Zero Gravity Beach Club Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-zero-gravity",
+    "name": "Zero Gravity",
+    "category": "venue",
+    "area": "Marina / JBR",
+    "lat": 25.0892916,
+    "lng": 55.1377027,
+    "tags": [
+      "nightlife",
+      "beach",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 180,
+    "opening_hours": {
+      "mon": "10:00-02:00",
+      "tue": "10:00-02:00",
+      "wed": "10:00-02:00",
+      "thu": "10:00-02:00",
+      "fri": "10:00-02:00",
+      "sat": "10:00-02:00",
+      "sun": "10:00-02:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Ce La Vi Dubai Downtown' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-ce-la-vi-dubai",
+    "name": "Ce La Vi Dubai",
+    "category": "venue",
+    "area": "Downtown",
+    "lat": 25.2020318,
+    "lng": 55.2708363,
+    "tags": [
+      "nightlife"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 150.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 180,
+    "opening_hours": {
+      "mon": "12:00-02:00",
+      "tue": "12:00-02:00",
+      "wed": "12:00-02:00",
+      "thu": "12:00-02:00",
+      "fri": "12:00-02:00",
+      "sat": "12:00-02:00",
+      "sun": "12:00-02:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Soho Garden Meydan Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-soho-garden",
+    "name": "Soho Garden",
+    "category": "venue",
+    "area": "Meydan",
+    "lat": 25.1581391,
+    "lng": 55.3001114,
+    "tags": [
+      "nightlife",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 100.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 180,
+    "opening_hours": {
+      "mon": "18:00-02:00",
+      "tue": "18:00-02:00",
+      "wed": "18:00-02:00",
+      "thu": "18:00-02:00",
+      "fri": "18:00-02:00",
+      "sat": "18:00-02:00",
+      "sun": "18:00-02:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'City Walk Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-city-walk",
+    "name": "City Walk",
+    "category": "neighbourhood",
+    "area": "Jumeirah",
+    "lat": 25.2081589,
+    "lng": 55.2618737,
+    "tags": [
+      "shopping",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'La Mer Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-la-mer",
+    "name": "La Mer",
+    "category": "neighbourhood",
+    "area": "Jumeirah",
+    "lat": 25.2270926,
+    "lng": 55.256325,
+    "tags": [
+      "shopping",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "10:00-00:00",
+      "tue": "10:00-00:00",
+      "wed": "10:00-00:00",
+      "thu": "10:00-00:00",
+      "fri": "10:00-00:00",
+      "sat": "10:00-00:00",
+      "sun": "10:00-00:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Dubai Marina Walk' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-dubai-marina-promenade",
+    "name": "Dubai Marina Promenade",
+    "category": "neighbourhood",
+    "area": "Marina / JBR",
+    "lat": 25.0855573,
+    "lng": 55.1476077,
+    "tags": [
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "daily": "24 hours"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'The Walk JBR Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-the-walk-at-jbr",
+    "name": "The Walk at JBR",
+    "category": "neighbourhood",
+    "area": "Marina / JBR",
+    "lat": 25.0813157,
+    "lng": 55.1375564,
+    "tags": [
+      "shopping",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 90,
+    "opening_hours": {
+      "mon": "10:00-00:00",
+      "tue": "10:00-00:00",
+      "wed": "10:00-00:00",
+      "thu": "10:00-00:00",
+      "fri": "10:00-00:00",
+      "sat": "10:00-00:00",
+      "sun": "10:00-00:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Gold and Diamond Park Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-gold-and-diamond-park",
+    "name": "Gold and Diamond Park",
+    "category": "market",
+    "area": "Al Quoz",
+    "lat": 25.1261345,
+    "lng": 55.208944,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 75,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Al Quoz Pond Park Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-al-quoz-pond-park",
+    "name": "Al Quoz Pond Park",
+    "category": "park",
+    "area": "Al Quoz",
+    "lat": 25.1637759,
+    "lng": 55.2664662,
+    "tags": [
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 45,
+    "opening_hours": {
+      "daily": "daylight"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Marasi Business Bay Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-marasi-marina-promenade",
+    "name": "Marasi Marina Promenade",
+    "category": "neighbourhood",
+    "area": "Business Bay",
+    "lat": 25.1824121,
+    "lng": 55.2707948,
+    "tags": [
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "low",
+    "typical_visit_minutes": 45,
+    "opening_hours": {
+      "daily": "24 hours"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Bay Avenue Business Bay Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-bay-avenue",
+    "name": "Bay Avenue",
+    "category": "neighbourhood",
+    "area": "Business Bay",
+    "lat": 25.1900787,
+    "lng": 55.2671882,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 60,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Dubai Festival City' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-dubai-festival-city",
+    "name": "Dubai Festival City",
+    "category": "neighbourhood",
+    "area": "Dubai Creek",
+    "lat": 25.2221681,
+    "lng": 55.3490821,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": true,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "About AED 1 per crossing, recorded as unchecked general knowledge in docs/research.md on 2026-11-16. Nominatim query 'Bur Dubai Abra Station' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-dubai-creek-abra-crossing",
+    "name": "Dubai Creek Abra Crossing",
+    "category": "transit",
+    "area": "Dubai Creek",
+    "lat": 25.2646933,
+    "lng": 55.2930443,
+    "tags": [
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 1.0,
+      "max_aed": 1.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 15,
+    "opening_hours": {
+      "daily": "24 hours"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query 'Global Village Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-global-village",
+    "name": "Global Village",
+    "category": "attraction",
+    "area": "Dubailand",
+    "lat": 25.0724939,
+    "lng": 55.3070253,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 15.0,
+      "max_aed": 30.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 180,
+    "opening_hours": {
+      "mon": "16:00-00:00",
+      "tue": "16:00-00:00",
+      "wed": "16:00-00:00",
+      "thu": "16:00-00:00",
+      "fri": "16:00-00:00",
+      "sat": "16:00-00:00",
+      "sun": "16:00-00:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Expo City Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-expo-city-dubai",
+    "name": "Expo City Dubai",
+    "category": "neighbourhood",
+    "area": "Expo",
+    "lat": 24.9634934,
+    "lng": 55.1460846,
+    "tags": [
+      "outdoor",
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "mon": "10:00-22:00",
+      "tue": "10:00-22:00",
+      "wed": "10:00-22:00",
+      "thu": "10:00-22:00",
+      "fri": "10:00-22:00",
+      "sat": "10:00-22:00",
+      "sun": "10:00-22:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Souk Madinat Jumeirah' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-souk-madinat-jumeirah",
+    "name": "Souk Madinat Jumeirah",
+    "category": "market",
+    "area": "Jumeirah",
+    "lat": 25.1334241,
+    "lng": 55.1857858,
+    "tags": [
+      "shopping"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 75,
+    "opening_hours": {
+      "mon": "10:00-00:00",
+      "tue": "10:00-00:00",
+      "wed": "10:00-00:00",
+      "thu": "10:00-00:00",
+      "fri": "10:00-00:00",
+      "sat": "10:00-00:00",
+      "sun": "10:00-00:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Dubai Fountain' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-dubai-fountain",
+    "name": "Dubai Fountain",
+    "category": "landmark",
+    "area": "Downtown",
+    "lat": 25.1951223,
+    "lng": 55.2751696,
+    "tags": [
+      "landmark",
+      "outdoor"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 30,
+    "opening_hours": {
+      "mon": "18:00-02:00",
+      "tue": "18:00-02:00",
+      "wed": "18:00-02:00",
+      "thu": "18:00-02:00",
+      "fri": "18:00-02:00",
+      "sat": "18:00-02:00",
+      "sun": "18:00-02:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Treated as free to enter. That was not re-checked on an official page. Nominatim query 'Pier 7 Dubai Marina' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-pier-7",
+    "name": "Pier 7",
+    "category": "venue",
+    "area": "Marina / JBR",
+    "lat": 25.0762267,
+    "lng": 55.1388292,
+    "tags": [
+      "nightlife"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 0.0
+    },
+    "crowd_level": "high",
+    "typical_visit_minutes": 150,
+    "opening_hours": {
+      "mon": "12:00-02:00",
+      "tue": "12:00-02:00",
+      "wed": "12:00-02:00",
+      "thu": "12:00-02:00",
+      "fri": "12:00-02:00",
+      "sat": "12:00-02:00",
+      "sun": "12:00-02:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Ticket range is an estimate, not an official quote. Nominatim query '360 bar Burj Al Arab Dubai' on 2026-11-17. Crowd level, visit length, and opening hours are estimated.",
+    "as_of": "2026-11-17",
+    "id": "place-360-dubai",
+    "name": "360 Dubai",
+    "category": "venue",
+    "area": "Jumeirah",
+    "lat": 25.2647227,
+    "lng": 55.2924146,
+    "tags": [
+      "nightlife"
+    ],
+    "price_aed": {
+      "min_aed": 0.0,
+      "max_aed": 150.0
+    },
+    "crowd_level": "medium",
+    "typical_visit_minutes": 120,
+    "opening_hours": {
+      "mon": "18:00-02:00",
+      "tue": "18:00-02:00",
+      "wed": "18:00-02:00",
+      "thu": "18:00-02:00",
+      "fri": "18:00-02:00",
+      "sat": "18:00-02:00",
+      "sun": "18:00-02:00"
+    },
+    "indoor": false,
+    "timed_entry": false,
+    "operational_status": "open",
+    "status_as_of": null,
+    "official_url": null
+  }
+]

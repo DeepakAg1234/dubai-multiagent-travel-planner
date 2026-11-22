@@ -1,0 +1,652 @@
+[
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-centrepoint__metro-emirates",
+    "from_id": "metro-centrepoint",
+    "to_id": "metro-emirates",
+    "line": "Red",
+    "minutes": 4
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-emirates__metro-airport-terminal-3",
+    "from_id": "metro-emirates",
+    "to_id": "metro-airport-terminal-3",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-airport-terminal-3__metro-airport-terminal-1",
+    "from_id": "metro-airport-terminal-3",
+    "to_id": "metro-airport-terminal-1",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-airport-terminal-1__metro-al-garhoud",
+    "from_id": "metro-airport-terminal-1",
+    "to_id": "metro-al-garhoud",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-al-garhoud__metro-city-centre-deira",
+    "from_id": "metro-al-garhoud",
+    "to_id": "metro-city-centre-deira",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-city-centre-deira__metro-al-rigga",
+    "from_id": "metro-city-centre-deira",
+    "to_id": "metro-al-rigga",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-al-rigga__metro-union",
+    "from_id": "metro-al-rigga",
+    "to_id": "metro-union",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-union__metro-burjuman",
+    "from_id": "metro-union",
+    "to_id": "metro-burjuman",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-burjuman__metro-adcb",
+    "from_id": "metro-burjuman",
+    "to_id": "metro-adcb",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-adcb__metro-max",
+    "from_id": "metro-adcb",
+    "to_id": "metro-max",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-max__metro-world-trade-centre",
+    "from_id": "metro-max",
+    "to_id": "metro-world-trade-centre",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-world-trade-centre__metro-emirates-towers",
+    "from_id": "metro-world-trade-centre",
+    "to_id": "metro-emirates-towers",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-emirates-towers__metro-financial-centre",
+    "from_id": "metro-emirates-towers",
+    "to_id": "metro-financial-centre",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-financial-centre__metro-burj-khalifa-dubai-mall",
+    "from_id": "metro-financial-centre",
+    "to_id": "metro-burj-khalifa-dubai-mall",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-burj-khalifa-dubai-mall__metro-business-bay",
+    "from_id": "metro-burj-khalifa-dubai-mall",
+    "to_id": "metro-business-bay",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-business-bay__metro-garmin",
+    "from_id": "metro-business-bay",
+    "to_id": "metro-garmin",
+    "line": "Red",
+    "minutes": 7
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-garmin__metro-equiti",
+    "from_id": "metro-garmin",
+    "to_id": "metro-equiti",
+    "line": "Red",
+    "minutes": 5
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-equiti__metro-mall-of-the-emirates",
+    "from_id": "metro-equiti",
+    "to_id": "metro-mall-of-the-emirates",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-mall-of-the-emirates__metro-insurance-market",
+    "from_id": "metro-mall-of-the-emirates",
+    "to_id": "metro-insurance-market",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-insurance-market__metro-dubai-internet-city",
+    "from_id": "metro-insurance-market",
+    "to_id": "metro-dubai-internet-city",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-dubai-internet-city__metro-al-fardan-exchange",
+    "from_id": "metro-dubai-internet-city",
+    "to_id": "metro-al-fardan-exchange",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-al-fardan-exchange__metro-sobha-realty",
+    "from_id": "metro-al-fardan-exchange",
+    "to_id": "metro-sobha-realty",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-sobha-realty__metro-dmcc",
+    "from_id": "metro-sobha-realty",
+    "to_id": "metro-dmcc",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-dmcc__metro-national-paints",
+    "from_id": "metro-dmcc",
+    "to_id": "metro-national-paints",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-national-paints__metro-ibn-battuta",
+    "from_id": "metro-national-paints",
+    "to_id": "metro-ibn-battuta",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-ibn-battuta__metro-energy",
+    "from_id": "metro-ibn-battuta",
+    "to_id": "metro-energy",
+    "line": "Red",
+    "minutes": 4
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-energy__metro-danube",
+    "from_id": "metro-energy",
+    "to_id": "metro-danube",
+    "line": "Red",
+    "minutes": 4
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-danube__metro-life-pharmacy",
+    "from_id": "metro-danube",
+    "to_id": "metro-life-pharmacy",
+    "line": "Red",
+    "minutes": 3
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-national-paints__metro-the-gardens",
+    "from_id": "metro-national-paints",
+    "to_id": "metro-the-gardens",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-the-gardens__metro-discovery-gardens",
+    "from_id": "metro-the-gardens",
+    "to_id": "metro-discovery-gardens",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-discovery-gardens__metro-al-furjan",
+    "from_id": "metro-discovery-gardens",
+    "to_id": "metro-al-furjan",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-al-furjan__metro-jumeirah-golf-estates",
+    "from_id": "metro-al-furjan",
+    "to_id": "metro-jumeirah-golf-estates",
+    "line": "Red",
+    "minutes": 4
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-jumeirah-golf-estates__metro-dubai-investment-park",
+    "from_id": "metro-jumeirah-golf-estates",
+    "to_id": "metro-dubai-investment-park",
+    "line": "Red",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-dubai-investment-park__metro-expo-2020",
+    "from_id": "metro-dubai-investment-park",
+    "to_id": "metro-expo-2020",
+    "line": "Red",
+    "minutes": 7
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-e-and__metro-al-qusais",
+    "from_id": "metro-e-and",
+    "to_id": "metro-al-qusais",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-al-qusais__metro-dubai-airport-free-zone",
+    "from_id": "metro-al-qusais",
+    "to_id": "metro-dubai-airport-free-zone",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-dubai-airport-free-zone__metro-al-nahda",
+    "from_id": "metro-dubai-airport-free-zone",
+    "to_id": "metro-al-nahda",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-al-nahda__metro-stadium",
+    "from_id": "metro-al-nahda",
+    "to_id": "metro-stadium",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-stadium__metro-al-qiyadah",
+    "from_id": "metro-stadium",
+    "to_id": "metro-al-qiyadah",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-al-qiyadah__metro-abu-hail",
+    "from_id": "metro-al-qiyadah",
+    "to_id": "metro-abu-hail",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-abu-hail__metro-abu-baker-al-siddique",
+    "from_id": "metro-abu-hail",
+    "to_id": "metro-abu-baker-al-siddique",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-abu-baker-al-siddique__metro-salah-al-din",
+    "from_id": "metro-abu-baker-al-siddique",
+    "to_id": "metro-salah-al-din",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-salah-al-din__metro-union",
+    "from_id": "metro-salah-al-din",
+    "to_id": "metro-union",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-union__metro-baniyas-square",
+    "from_id": "metro-union",
+    "to_id": "metro-baniyas-square",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-baniyas-square__metro-gold-souq",
+    "from_id": "metro-baniyas-square",
+    "to_id": "metro-gold-souq",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-gold-souq__metro-al-ras",
+    "from_id": "metro-gold-souq",
+    "to_id": "metro-al-ras",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-al-ras__metro-al-ghubaiba",
+    "from_id": "metro-al-ras",
+    "to_id": "metro-al-ghubaiba",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-al-ghubaiba__metro-sharaf-dg",
+    "from_id": "metro-al-ghubaiba",
+    "to_id": "metro-sharaf-dg",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-sharaf-dg__metro-burjuman",
+    "from_id": "metro-sharaf-dg",
+    "to_id": "metro-burjuman",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-burjuman__metro-oud-metha",
+    "from_id": "metro-burjuman",
+    "to_id": "metro-oud-metha",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-oud-metha__metro-dubai-healthcare-city",
+    "from_id": "metro-oud-metha",
+    "to_id": "metro-dubai-healthcare-city",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-dubai-healthcare-city__metro-al-jadaf",
+    "from_id": "metro-dubai-healthcare-city",
+    "to_id": "metro-al-jadaf",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "metro-al-jadaf__metro-creek",
+    "from_id": "metro-al-jadaf",
+    "to_id": "metro-creek",
+    "line": "Green",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "tram-jumeirah-beach-residence-1__tram-jumeirah-beach-residence-2",
+    "from_id": "tram-jumeirah-beach-residence-1",
+    "to_id": "tram-jumeirah-beach-residence-2",
+    "line": "Tram",
+    "minutes": 3
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "tram-jumeirah-beach-residence-2__tram-jumeirah-lakes-towers",
+    "from_id": "tram-jumeirah-beach-residence-2",
+    "to_id": "tram-jumeirah-lakes-towers",
+    "line": "Tram",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "tram-jumeirah-lakes-towers__tram-dubai-marina-mall",
+    "from_id": "tram-jumeirah-lakes-towers",
+    "to_id": "tram-dubai-marina-mall",
+    "line": "Tram",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "tram-dubai-marina-mall__tram-dubai-marina",
+    "from_id": "tram-dubai-marina-mall",
+    "to_id": "tram-dubai-marina",
+    "line": "Tram",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "tram-dubai-marina__tram-marina-towers",
+    "from_id": "tram-dubai-marina",
+    "to_id": "tram-marina-towers",
+    "line": "Tram",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "tram-marina-towers__tram-mina-seyahi",
+    "from_id": "tram-marina-towers",
+    "to_id": "tram-mina-seyahi",
+    "line": "Tram",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "tram-mina-seyahi__tram-media-city",
+    "from_id": "tram-mina-seyahi",
+    "to_id": "tram-media-city",
+    "line": "Tram",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "tram-media-city__tram-palm-jumeirah",
+    "from_id": "tram-media-city",
+    "to_id": "tram-palm-jumeirah",
+    "line": "Tram",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "tram-palm-jumeirah__tram-knowledge-village",
+    "from_id": "tram-palm-jumeirah",
+    "to_id": "tram-knowledge-village",
+    "line": "Tram",
+    "minutes": 3
+  },
+  {
+    "provenance": "estimated",
+    "source": "Minutes are estimated from straight-line distance. Red and Green hops are scaled so Centrepoint to Expo 2020 is about 74 minutes, the end-to-end time on the Wikipedia Red Line page retrieved 2026-11-17. This is not an RTA GTFS feed.",
+    "as_of": "2026-11-17",
+    "id": "tram-knowledge-village__tram-al-sufouh",
+    "from_id": "tram-knowledge-village",
+    "to_id": "tram-al-sufouh",
+    "line": "Tram",
+    "minutes": 2
+  },
+  {
+    "provenance": "estimated",
+    "source": "Walk interchange estimated at 6 minutes.",
+    "as_of": "2026-11-17",
+    "id": "tram-jumeirah-lakes-towers__metro-dmcc",
+    "from_id": "tram-jumeirah-lakes-towers",
+    "to_id": "metro-dmcc",
+    "line": "walk",
+    "minutes": 6
+  },
+  {
+    "provenance": "estimated",
+    "source": "Walk interchange estimated at 6 minutes.",
+    "as_of": "2026-11-17",
+    "id": "tram-dubai-marina__metro-sobha-realty",
+    "from_id": "tram-dubai-marina",
+    "to_id": "metro-sobha-realty",
+    "line": "walk",
+    "minutes": 6
+  }
+]

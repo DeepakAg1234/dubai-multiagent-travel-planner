@@ -1,0 +1,107 @@
+Project: Dubai AI Travel Planner — Multi-Agent Systems
+
+Canonical formatted copy: docs/problemStatement.md. Product defaults: docs/decisions.md. Committed catalog: docs/implementationplan.md section 1.7.
+
+
+1. Background 
+Planning a trip involves multiple interconnected decisions, including selecting attractions, finding accommodation, organizing transportation, estimating expenses, and ensuring the itinerary matches the traveler's preferences.
+A traditional AI chatbot may generate an itinerary in a single response, but it does not necessarily verify travel times, check budget constraints, or validate recommendations against external information.
+This project explores how multiple specialized AI agents can collaborate to solve a real-world travel-planning problem, orchestrated as a LangGraph workflow and deployed as a Vercel-native web application.
+2. Problem Statement
+Build a Dubai-focused AI Travel Planning System that converts a natural-language travel request into a personalized, budget-conscious, and practical travel itinerary.
+Instead of relying on a single AI agent, the system will divide the planning process among specialized agents responsible for destination research, logistics, budgeting, and quality validation.
+The application will be built with LangGraph and hosted on Vercel: graph-based orchestration, shared state, parallel execution, conditional decisions, feedback loops, and a web UI that streams agent progress from Vercel-hosted APIs.
+The goal is not to build a commercial travel-booking platform but to demonstrate how multi-agent architectures solve problems through coordinated decision-making.
+
+A second path, the itinerary auditor, shows the same difference to a non-technical visitor. They paste a Dubai plan written by a general chatbot. The auditor matches names to the curated catalog, then runs the same budget, routing, hours, and holiday rules. It reports what failed and rebuilds a plan from the places that are actually usable. A chatbot can sound sure. It cannot prove the plan against this catalog.
+3. Example User Request
+Plan a 4-day trip to Dubai with a budget of AED 5,000, excluding flights. I enjoy cultural attractions, local food, and beaches. I prefer affordable hotels and want to avoid crowded places.
+The system should generate:
+A personalized day-by-day itinerary with suggested timings.
+Recommended attractions, restaurants, and accommodation areas.
+Transportation options and estimated travel durations.
+A category-wise budget breakdown in AED.
+Alternatives when the proposed itinerary exceeds the budget.
+A final itinerary validated against the user's preferences and constraints.
+4. Multi-Agent System Design
+Agent 1 — Orchestrator Agent
+Understands the travel request, extracts constraints, coordinates specialized agents, manages dependencies, and assembles the final itinerary.
+Agent 2 — Destination Research Agent
+Research Dubai attractions, restaurants, cultural experiences, and neighborhoods. Recommends activities based on user interests, location, and preferences.
+Agent 3 — Logistics Agent
+Suggests accommodation areas, calculates distances and travel times, identifies transportation options, and organizes activities into a practical geographical sequence.
+Agent 4 — Budget Agent
+Estimates accommodation, food, transportation, and activity costs. Calculates the total projected expenditure and recommends alternatives when costs exceed the budget.
+Agent 5 — Review Agent
+Evaluates the complete itinerary for budget compliance, schedule feasibility, preference alignment, duplicate activities, missing information, closed or non-operational places, and holiday effects (Ramadan meals, Eid heritage holds, National Day crowds). Requests revisions when necessary.
+5. Dubai Travel Data — Sources and Integration
+The system combines a curated Dubai dataset (the source of truth) with optional free APIs that do not require a payment card. Paid and card-gated services (including the Google Maps Platform) are out of scope. Discontinued services (including the Amadeus Self-Service hotel APIs, closed on 2026-07-17) are not used.
+Phase 1 is complete. Implementation uses data/seed/, not the original curation targets. Counts: 81 places, 80 restaurants, 32 hotels, 64 stations, 65 edges, 20 fares, 10 price bands, 12 climate months, 14 holidays.
+What the seed actually contains:
+Attractions: 81 places across eight planning areas, mostly estimated. Museum of the Future is reopening.
+Ticket price, closure, timed entry: present on every place; almost none are official-site quotes.
+Restaurants: 80 rows, 10 per area, lunch and dinner. Cuisine is unspecified. No menu prices. Match on area, price band, and meal types.
+Routes: 64 Metro/tram stations, 65 estimated-minute edges, two tram-metro walks. Station zone is empty. No GTFS. OpenRouteService is optional (ORS_API_KEY unset). Offline routing is the graph, then straight line.
+Fares: Silver 1/2/3+ verified. 1-day pass, taxi, and Abra estimated. No bus table. Zone span from a planner-side area map.
+Accommodation: 32 hotels, every area has budget/mid/luxury. Peak and summer bands are estimated. Stars empty. No live hotel API.
+Weather: climate.json Open-Meteo archive 2016-2025 (July mean high 41 C). Live forecast optional.
+Holidays: 2026-2027 city-wide rows. Ramadan drops lunch. Eid holds heritage on day one and raises crowds. National Day raises crowds.
+Data integration approach
+The curated JSON/SQLite catalog is the source of truth and must work with every external API off.
+Wikidata and Nominatim were curation-only. The planner never calls them at runtime.
+Most catalog prices are estimated. Silver Nol fares that match the RTA table are verified. Record source and as_of on every row.
+OpenRouteService is used only when a free key is configured and USE_LIVE_APIS is on.
+Overpass may enrich cuisine or hours later. It must not replace curated prices, operational_status, or hotel nightly ranges.
+Runtime cache and durable checkpoints stay off unless store URLs are set (docs/decisions.md).
+Live hotel bookings, ticket purchases, guaranteed real-time prices, and any paid or card-gated APIs are outside the initial scope.
+6. LangGraph Orchestration
+Implement the agents as nodes in one stateful LangGraph. Demonstrate parallel research, shared state, conditional routing, a review-feedback loop that triggers itinerary revisions, and synthesis of each agent's findings into one structured itinerary.
+7. End-to-End Workflow
+User Travel Request
+        |
+Parse Requirements
+        |
+        v
+   Orchestrator
+        |
+        +-------------------+
+        |                   |
+        v                   v
+ Destination Agent     Logistics Agent
+        |                   |
+        +---------+---------+
+                  |
+                  v
+             Budget Agent
+                  |
+                  v
+              Review Agent
+                  |
+           +------+------+
+           |             |
+         Pass          Revise
+           |             |
+           v             |
+     Final Itinerary <---+
+The Vercel-hosted application should also display which agent is executing, what information it produces, and how the overall plan changes during review.
+8. Technology Stack
+Development environment: Cursor
+Programming language: Python for the LangGraph planner, TypeScript/React for the Vercel UI
+Multi-agent framework: LangGraph running behind Vercel-hosted API endpoints
+LLM: Groq for every LLM node except review (Gemini). Card-free keys only. Ollama is local development only and does not replace Gemini on review
+Frontend: Next.js / React at apps/web. Map view is post-MVP
+Backend/API: Vercel Services (web + planner-api). Fallback: one project with a Python function. Path /api/planner/*
+Data: Static JSON / read-only SQLite in data/seed/. Optional free runtime APIs: OpenRouteService, Overpass, Open-Meteo
+Runtime persistence: Off unless CACHE_STORE_URL or CHECKPOINT_STORE_URL is set. No Marketplace store chosen yet
+Validation: Pydantic schemas and rule-based budget, holiday, and itinerary checks
+9. MVP Scope and Success Criteria
+Initial scope: Dubai only, covering short trips of 1–7 days, with budget calculations in AED.
+Out of scope: live hotel bookings, ticket purchases, guaranteed real-time prices, flights, paid or card-gated APIs (Google Maps Platform, paid LLM APIs), and discontinued hotel APIs (Amadeus Self-Service).
+The project will be considered successful when it can:
+Accept natural-language travel requirements and produce a structured Dubai itinerary.
+Demonstrate meaningful collaboration among specialized agents.
+Generate realistic travel schedules and estimated budgets using available data.
+Detect and revise at least one itinerary constraint violation.
+Visualize which LangGraph node is executing and how shared state changes through the graph.
+Check a pasted itinerary from another AI: name unknown places, flag rules the plan breaks, and show a rebuilt version when one can be made.
+Expected outcome: A working, interactive Vercel deployment that helps technical and nontechnical audiences understand agent specialization, orchestration, collaboration, shared context, and validation through a practical travel-planning use case.

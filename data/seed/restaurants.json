@@ -1,0 +1,2082 @@
+[
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Old Dubai anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-old-dubai-pak-liyari-restaurant",
+    "name": "Pak Liyari Restaurant",
+    "cuisine": "unspecified",
+    "area": "Old Dubai",
+    "lat": 25.2705327,
+    "lng": 55.3039693,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Old Dubai anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-old-dubai-al-aydee-al-bydai-restaurant",
+    "name": "Al Aydee Al Bydai Restaurant",
+    "cuisine": "unspecified",
+    "area": "Old Dubai",
+    "lat": 25.2714538,
+    "lng": 55.3084322,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Old Dubai anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-old-dubai-food-castle-express-restaurant",
+    "name": "Food Castle Express Restaurant",
+    "cuisine": "unspecified",
+    "area": "Old Dubai",
+    "lat": 25.2707784,
+    "lng": 55.3511727,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Old Dubai anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-old-dubai-al-reef-al-yamani-restaurant-and-bakeries",
+    "name": "Al Reef Al Yamani Restaurant & Bakeries",
+    "cuisine": "unspecified",
+    "area": "Old Dubai",
+    "lat": 25.2799853,
+    "lng": 55.3531518,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Old Dubai anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-old-dubai-mile7-restaurant",
+    "name": "MILE7 RESTAURANT",
+    "cuisine": "unspecified",
+    "area": "Old Dubai",
+    "lat": 25.2801697,
+    "lng": 55.3457983,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Old Dubai anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-old-dubai-nasheman-hyderabad-restaurant",
+    "name": "Nasheman Hyderabad Restaurant",
+    "cuisine": "unspecified",
+    "area": "Old Dubai",
+    "lat": 25.2761746,
+    "lng": 55.3376497,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Old Dubai anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-old-dubai-wanees-restaurant",
+    "name": "Wanees Restaurant",
+    "cuisine": "unspecified",
+    "area": "Old Dubai",
+    "lat": 25.260699,
+    "lng": 55.3319853,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Old Dubai anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-old-dubai-al-tawasol-restaurant",
+    "name": "Al Tawasol Restaurant",
+    "cuisine": "unspecified",
+    "area": "Old Dubai",
+    "lat": 25.2606381,
+    "lng": 55.3272738,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Old Dubai anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-old-dubai-white-falcon-restaurant",
+    "name": "White Falcon Restaurant",
+    "cuisine": "unspecified",
+    "area": "Old Dubai",
+    "lat": 25.2582844,
+    "lng": 55.329206,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Old Dubai anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-old-dubai-alfarooj-alshami-restaurant",
+    "name": "AlFarooj AlShami Restaurant",
+    "cuisine": "unspecified",
+    "area": "Old Dubai",
+    "lat": 25.2619988,
+    "lng": 55.3272705,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Downtown anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-downtown-kuai-restaurant",
+    "name": "Kuai Restaurant",
+    "cuisine": "unspecified",
+    "area": "Downtown",
+    "lat": 25.2013391,
+    "lng": 55.2502006,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Downtown anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-downtown-tatel",
+    "name": "TATEL",
+    "cuisine": "unspecified",
+    "area": "Downtown",
+    "lat": 25.1902898,
+    "lng": 55.2748312,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Downtown anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-downtown-al-manara-cafeteria",
+    "name": "Al Manara Cafeteria",
+    "cuisine": "unspecified",
+    "area": "Downtown",
+    "lat": 25.2016506,
+    "lng": 55.2514337,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Downtown anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-downtown-slider-station",
+    "name": "Slider Station",
+    "cuisine": "unspecified",
+    "area": "Downtown",
+    "lat": 25.208015,
+    "lng": 55.254987,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Downtown anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-downtown-yugen",
+    "name": "Yugen",
+    "cuisine": "unspecified",
+    "area": "Downtown",
+    "lat": 25.2202611,
+    "lng": 55.2540889,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Downtown anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-downtown-nusret",
+    "name": "Nusret",
+    "cuisine": "unspecified",
+    "area": "Downtown",
+    "lat": 25.2024344,
+    "lng": 55.2399873,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Downtown anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-downtown-bayat-al-fatayer",
+    "name": "Bayat Al Fatayer",
+    "cuisine": "unspecified",
+    "area": "Downtown",
+    "lat": 25.2120076,
+    "lng": 55.247813,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Downtown anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-downtown-la-serre",
+    "name": "La Serre",
+    "cuisine": "unspecified",
+    "area": "Downtown",
+    "lat": 25.2073006,
+    "lng": 55.2617777,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Downtown anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-downtown-saravanaa-bhavan",
+    "name": "Saravanaa Bhavan",
+    "cuisine": "unspecified",
+    "area": "Downtown",
+    "lat": 25.2346751,
+    "lng": 55.3096576,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Downtown anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-downtown-",
+    "name": "\u0645\u0637\u0639\u0645 \u0648\u0645\u0642\u0647\u0649 \u0627\u0644\u0643\u0648\u0641\u0629",
+    "cuisine": "unspecified",
+    "area": "Downtown",
+    "lat": 25.2369512,
+    "lng": 55.3114891,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Marina / JBR anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-marina-jbr-new-midnight-cafe-and-restaurant",
+    "name": "New Midnight Cafe & Restaurant",
+    "cuisine": "unspecified",
+    "area": "Marina / JBR",
+    "lat": 25.0487818,
+    "lng": 55.1296443,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Marina / JBR anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-marina-jbr-vista-rooftop-bar-and-restaurant",
+    "name": "Vista Rooftop Bar & Restaurant",
+    "cuisine": "unspecified",
+    "area": "Marina / JBR",
+    "lat": 25.1045328,
+    "lng": 55.1662253,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Marina / JBR anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-marina-jbr-sky-restaurant",
+    "name": "Sky Restaurant",
+    "cuisine": "unspecified",
+    "area": "Marina / JBR",
+    "lat": 25.0998386,
+    "lng": 55.1789202,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Marina / JBR anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-marina-jbr-green-land-restaurant",
+    "name": "Green Land Restaurant",
+    "cuisine": "unspecified",
+    "area": "Marina / JBR",
+    "lat": 25.1083975,
+    "lng": 55.1839099,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Marina / JBR anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-marina-jbr-krave",
+    "name": "Krave",
+    "cuisine": "unspecified",
+    "area": "Marina / JBR",
+    "lat": 25.0973864,
+    "lng": 55.1705238,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Marina / JBR anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-marina-jbr-se-or-pico",
+    "name": "Se\u00f1or Pico",
+    "cuisine": "unspecified",
+    "area": "Marina / JBR",
+    "lat": 25.1061263,
+    "lng": 55.1442492,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Marina / JBR anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-marina-jbr-jedoudna",
+    "name": "Jedoudna",
+    "cuisine": "unspecified",
+    "area": "Marina / JBR",
+    "lat": 25.096248,
+    "lng": 55.1591183,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Marina / JBR anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-marina-jbr-gallus",
+    "name": "Gallus",
+    "cuisine": "unspecified",
+    "area": "Marina / JBR",
+    "lat": 25.0823122,
+    "lng": 55.1406564,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Marina / JBR anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-marina-jbr-azurro",
+    "name": "Azurro",
+    "cuisine": "unspecified",
+    "area": "Marina / JBR",
+    "lat": 25.075496,
+    "lng": 55.1383645,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Marina / JBR anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-marina-jbr-rite-bite",
+    "name": "Rite Bite",
+    "cuisine": "unspecified",
+    "area": "Marina / JBR",
+    "lat": 25.1131349,
+    "lng": 55.1725721,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Jumeirah anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-jumeirah-sadaf-persian-restaurant",
+    "name": "Sadaf Persian Restaurant",
+    "cuisine": "unspecified",
+    "area": "Jumeirah",
+    "lat": 25.2165839,
+    "lng": 55.2778602,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Jumeirah anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-jumeirah-taza-dhiyafa-restaurant",
+    "name": "TAZA Dhiyafa Restaurant",
+    "cuisine": "unspecified",
+    "area": "Jumeirah",
+    "lat": 25.2352614,
+    "lng": 55.2779849,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Jumeirah anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-jumeirah-seleraku-restaurant",
+    "name": "Seleraku Restaurant",
+    "cuisine": "unspecified",
+    "area": "Jumeirah",
+    "lat": 25.2443306,
+    "lng": 55.2773893,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Jumeirah anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-jumeirah-al-turath-al-maghiribi",
+    "name": "al turath Al maghiribi",
+    "cuisine": "unspecified",
+    "area": "Jumeirah",
+    "lat": 25.2208129,
+    "lng": 55.275175,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Jumeirah anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-jumeirah-roobaru",
+    "name": "Roobaru",
+    "cuisine": "unspecified",
+    "area": "Jumeirah",
+    "lat": 25.1916145,
+    "lng": 55.2697437,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Jumeirah anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-jumeirah-saudi-kitchen-for-saudi-food",
+    "name": "Saudi Kitchen For Saudi Food",
+    "cuisine": "unspecified",
+    "area": "Jumeirah",
+    "lat": 25.2065044,
+    "lng": 55.2435046,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Jumeirah anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-jumeirah-red-table",
+    "name": "Red Table",
+    "cuisine": "unspecified",
+    "area": "Jumeirah",
+    "lat": 25.2358062,
+    "lng": 55.2771581,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Jumeirah anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-jumeirah-qahwet-murjan",
+    "name": "Qahwet Murjan",
+    "cuisine": "unspecified",
+    "area": "Jumeirah",
+    "lat": 25.2318565,
+    "lng": 55.2599523,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Jumeirah anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-jumeirah-tony-rama",
+    "name": "Tony rama",
+    "cuisine": "unspecified",
+    "area": "Jumeirah",
+    "lat": 25.2158429,
+    "lng": 55.2773297,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Jumeirah anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-jumeirah-al-fanar",
+    "name": "Al Fanar",
+    "cuisine": "unspecified",
+    "area": "Jumeirah",
+    "lat": 25.2153015,
+    "lng": 55.2511114,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Al Quoz anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-al-quoz-topform-restaurant",
+    "name": "Topform Restaurant",
+    "cuisine": "unspecified",
+    "area": "Al Quoz",
+    "lat": 25.1187756,
+    "lng": 55.2286204,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Al Quoz anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-al-quoz-al-somar-restaurant",
+    "name": "Al SOmar Restaurant",
+    "cuisine": "unspecified",
+    "area": "Al Quoz",
+    "lat": 25.119467,
+    "lng": 55.2277241,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Al Quoz anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-al-quoz-al-madeena-restaurant",
+    "name": "Al Madeena Restaurant",
+    "cuisine": "unspecified",
+    "area": "Al Quoz",
+    "lat": 25.1305497,
+    "lng": 55.2357167,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Al Quoz anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-al-quoz-grand-abshar-restaurant",
+    "name": "Grand Abshar Restaurant",
+    "cuisine": "unspecified",
+    "area": "Al Quoz",
+    "lat": 25.17256,
+    "lng": 55.2186816,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Al Quoz anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-al-quoz-al-fannah-restaurant",
+    "name": "Al Fannah Restaurant",
+    "cuisine": "unspecified",
+    "area": "Al Quoz",
+    "lat": 25.1518122,
+    "lng": 55.1979579,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Al Quoz anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-al-quoz-fish-hut-restaurant",
+    "name": "Fish Hut Restaurant",
+    "cuisine": "unspecified",
+    "area": "Al Quoz",
+    "lat": 25.114965,
+    "lng": 55.212745,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Al Quoz anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-al-quoz-burger-fuel",
+    "name": "Burger Fuel",
+    "cuisine": "unspecified",
+    "area": "Al Quoz",
+    "lat": 25.1617214,
+    "lng": 55.2099144,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Al Quoz anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-al-quoz-antar",
+    "name": "Antar",
+    "cuisine": "unspecified",
+    "area": "Al Quoz",
+    "lat": 25.1463767,
+    "lng": 55.2098949,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Al Quoz anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-al-quoz-big-t",
+    "name": "BIG T",
+    "cuisine": "unspecified",
+    "area": "Al Quoz",
+    "lat": 25.1164472,
+    "lng": 55.2363338,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Al Quoz anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-al-quoz-the-stuffed-burger",
+    "name": "The Stuffed Burger",
+    "cuisine": "unspecified",
+    "area": "Al Quoz",
+    "lat": 25.1546003,
+    "lng": 55.203576,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Palm anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-palm-krave",
+    "name": "Krave",
+    "cuisine": "unspecified",
+    "area": "Palm",
+    "lat": 25.0973864,
+    "lng": 55.1705238,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Palm anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-palm-se-or-pico",
+    "name": "Se\u00f1or Pico",
+    "cuisine": "unspecified",
+    "area": "Palm",
+    "lat": 25.1061263,
+    "lng": 55.1442492,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Palm anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-palm-eat-zone",
+    "name": "Eat Zone",
+    "cuisine": "unspecified",
+    "area": "Palm",
+    "lat": 25.0659752,
+    "lng": 55.1375976,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Palm anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-palm-",
+    "name": "\u661f\u6e56\u6d77\u9c9c\u9910\u5385",
+    "cuisine": "unspecified",
+    "area": "Palm",
+    "lat": 25.0719908,
+    "lng": 55.1423312,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Palm anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-palm-al-bait-al-shami",
+    "name": "Al Bait Al Shami",
+    "cuisine": "unspecified",
+    "area": "Palm",
+    "lat": 25.0725856,
+    "lng": 55.1294743,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Palm anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-palm-un-dimache-a-paris",
+    "name": "Un Dimache A Paris",
+    "cuisine": "unspecified",
+    "area": "Palm",
+    "lat": 25.0777176,
+    "lng": 55.1248094,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Palm anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-palm-rite-bite",
+    "name": "Rite Bite",
+    "cuisine": "unspecified",
+    "area": "Palm",
+    "lat": 25.1131349,
+    "lng": 55.1725721,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Palm anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-palm-doner-kebab",
+    "name": "Doner Kebab",
+    "cuisine": "unspecified",
+    "area": "Palm",
+    "lat": 25.1050492,
+    "lng": 55.1680808,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Palm anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-palm-tortilla-media-city",
+    "name": "Tortilla Media city",
+    "cuisine": "unspecified",
+    "area": "Palm",
+    "lat": 25.1050806,
+    "lng": 55.1683554,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Palm anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-palm-shogun-arirang",
+    "name": "Shogun Arirang",
+    "cuisine": "unspecified",
+    "area": "Palm",
+    "lat": 25.1045022,
+    "lng": 55.1685285,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Dubai Creek anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-dubai-creek-mcdavid-s-restaurant",
+    "name": "McDavid's Restaurant",
+    "cuisine": "unspecified",
+    "area": "Dubai Creek",
+    "lat": 25.2646836,
+    "lng": 55.320497,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Dubai Creek anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-dubai-creek-shah-jee-restaurant",
+    "name": "Shah Jee Restaurant",
+    "cuisine": "unspecified",
+    "area": "Dubai Creek",
+    "lat": 25.2684024,
+    "lng": 55.3136872,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Dubai Creek anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-dubai-creek-chennai-biriyani-restaurant",
+    "name": "CHennai Biriyani Restaurant",
+    "cuisine": "unspecified",
+    "area": "Dubai Creek",
+    "lat": 25.2682507,
+    "lng": 55.3137013,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Dubai Creek anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-dubai-creek-amalfi",
+    "name": "Amalfi",
+    "cuisine": "unspecified",
+    "area": "Dubai Creek",
+    "lat": 25.227196,
+    "lng": 55.3416706,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Dubai Creek anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-dubai-creek-ihop",
+    "name": "IHOP",
+    "cuisine": "unspecified",
+    "area": "Dubai Creek",
+    "lat": 25.2208487,
+    "lng": 55.3518441,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Dubai Creek anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-dubai-creek-kashkan",
+    "name": "Kashkan",
+    "cuisine": "unspecified",
+    "area": "Dubai Creek",
+    "lat": 25.2210175,
+    "lng": 55.3518872,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Dubai Creek anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-dubai-creek-eataly",
+    "name": "Eataly",
+    "cuisine": "unspecified",
+    "area": "Dubai Creek",
+    "lat": 25.2213598,
+    "lng": 55.351789,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Dubai Creek anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-dubai-creek-maestro-pizza",
+    "name": "Maestro Pizza",
+    "cuisine": "unspecified",
+    "area": "Dubai Creek",
+    "lat": 25.2684335,
+    "lng": 55.3184601,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Dubai Creek anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-dubai-creek-atisuto",
+    "name": "Atisuto",
+    "cuisine": "unspecified",
+    "area": "Dubai Creek",
+    "lat": 25.2686472,
+    "lng": 55.3179498,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Dubai Creek anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-dubai-creek-west-lake-spring",
+    "name": "West Lake Spring",
+    "cuisine": "unspecified",
+    "area": "Dubai Creek",
+    "lat": 25.2675418,
+    "lng": 55.305875,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Business Bay anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-business-bay-al-hallab-restaurant",
+    "name": "Al Hallab Restaurant",
+    "cuisine": "unspecified",
+    "area": "Business Bay",
+    "lat": 25.1951515,
+    "lng": 55.2793007,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Business Bay anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-business-bay-gorkha-restaurant",
+    "name": "Gorkha Restaurant",
+    "cuisine": "unspecified",
+    "area": "Business Bay",
+    "lat": 25.231031,
+    "lng": 55.275437,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Business Bay anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-business-bay-bosnian-house",
+    "name": "Bosnian House",
+    "cuisine": "unspecified",
+    "area": "Business Bay",
+    "lat": 25.2161684,
+    "lng": 55.2534272,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Business Bay anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-business-bay-3-fils",
+    "name": "3 Fils",
+    "cuisine": "unspecified",
+    "area": "Business Bay",
+    "lat": 25.2103004,
+    "lng": 55.2433123,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Business Bay anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-business-bay-little-istanbul",
+    "name": "Little Istanbul",
+    "cuisine": "unspecified",
+    "area": "Business Bay",
+    "lat": 25.1728606,
+    "lng": 55.3042742,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Business Bay anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-business-bay-taqado-bussiness-bay",
+    "name": "Taqado Bussiness bay",
+    "cuisine": "unspecified",
+    "area": "Business Bay",
+    "lat": 25.190766,
+    "lng": 55.2657226,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Business Bay anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-business-bay-maestro-pizza",
+    "name": "Maestro Pizza",
+    "cuisine": "unspecified",
+    "area": "Business Bay",
+    "lat": 25.1887695,
+    "lng": 55.2628104,
+    "price_band": "budget",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Business Bay anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-business-bay-wafi-gourmet",
+    "name": "Wafi Gourmet",
+    "cuisine": "unspecified",
+    "area": "Business Bay",
+    "lat": 25.1964935,
+    "lng": 55.2772771,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Business Bay anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-business-bay-lebanushi",
+    "name": "lebanushi",
+    "cuisine": "unspecified",
+    "area": "Business Bay",
+    "lat": 25.1973493,
+    "lng": 55.2802619,
+    "price_band": "mid",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  },
+  {
+    "provenance": "estimated",
+    "source": "Name and coordinates from a Nominatim search for restaurants inside 6 km of the Business Bay anchor on 2026-11-17. OpenStreetMap data, ODbL. Cuisine is unspecified and the price band is estimated. No menu price was recorded. Overpass was unavailable during curation.",
+    "as_of": "2026-11-17",
+    "id": "restaurant-business-bay-nordsee",
+    "name": "Nordsee",
+    "cuisine": "unspecified",
+    "area": "Business Bay",
+    "lat": 25.1969602,
+    "lng": 55.2767779,
+    "price_band": "upscale",
+    "meal_types": [
+      "lunch",
+      "dinner"
+    ],
+    "opening_hours": {
+      "mon": "12:00-00:00",
+      "tue": "12:00-00:00",
+      "wed": "12:00-00:00",
+      "thu": "12:00-00:00",
+      "fri": "12:00-00:00",
+      "sat": "12:00-00:00",
+      "sun": "12:00-00:00"
+    },
+    "price_aed": null
+  }
+]
