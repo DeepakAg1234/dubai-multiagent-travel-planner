@@ -39,17 +39,15 @@ Local values live in `.env` (gitignored). On Vercel, set the same names for Prod
 
 | Name | Role |
 | --- | --- |
-| `LLM_PROVIDER` | `ollama` (default), `groq` for the non-review nodes, or `anthropic` for every node including review |
-| `OLLAMA_API_KEY`, `OLLAMA_BASE_URL`, `OLLAMA_MODEL` | Ollama Cloud (`https://ollama.com`, `nemotron-3-nano`) for every node except review |
-| `GROQ_API_KEY`, `GROQ_MODEL` | Review node (`openai/gpt-oss-20b`). Also used for the other nodes when `LLM_PROVIDER=groq` |
-| `ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL` | Claude Opus 5.5 (`claude-opus-5-5`) for every node when `LLM_PROVIDER=anthropic` |
+| `LLM_PROVIDER` | `anthropic`. Every node, including review, uses Claude |
+| `ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL` | Claude Opus 5.5 (`claude-opus-5-5`) |
 | `ORS_API_KEY` | Optional OpenRouteService key |
 | `USE_LIVE_APIS` | `false` keeps routing and weather on the seed |
 | `MAX_REVISIONS`, `BUFFER_PCT`, `API_CALL_BUDGET` | Loop cap, buffer, and live-call budget |
 | `CACHE_STORE_URL`, `CHECKPOINT_STORE_URL` | Leave empty on Vercel. Runtime cache and durable resume stay off |
 | `LANGSMITH_TRACING` | Optional. Leave unset. Traces record request length, not the text |
 
-Do not point `OLLAMA_BASE_URL` at localhost in a Vercel deployment.
+Ollama and Groq are not used.
 
 ## Local development
 
@@ -62,7 +60,7 @@ npm run dev
 
 Open the Next.js URL. The API health check is `GET /health` on port 8000, or `GET /api/planner/health` through the web app. Health reports whether keys are configured. It does not return key values.
 
-Offline mode is the default: `USE_LIVE_APIS=false` and empty `OLLAMA_API_KEY` / `GROQ_API_KEY` / `ANTHROPIC_API_KEY`. Holiday effects and the Metro/tram graph still apply. `python scripts/run_eval.py` forces that offline path even if your shell has keys.
+Offline mode is the default: `USE_LIVE_APIS=false` and an empty `ANTHROPIC_API_KEY`. Holiday effects and the Metro/tram graph still apply. `python scripts/run_eval.py` forces that offline path even if your shell has a key.
 
 ## Demo
 

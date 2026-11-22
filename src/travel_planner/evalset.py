@@ -111,7 +111,7 @@ def offline_settings() -> Settings:
     """Stubs and curated data only, even when the shell has provider keys."""
 
     return Settings(
-        llm_provider="ollama",
+        llm_provider="anthropic",
         ollama_api_key="",
         groq_api_key="",
         anthropic_api_key="",

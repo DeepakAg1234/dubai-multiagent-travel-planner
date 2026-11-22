@@ -22,7 +22,7 @@ export function UsagePanel({ llm, usage, budget, degraded, attributions }: Props
       </p>
       <p className="note">
         This run: {calls} model calls, {tokens} tokens. Live HTTP calls are capped at {budget} per run.
-        Account free-tier ceilings stay on the Groq and Ollama dashboards.
+        Model calls go to Claude through the Anthropic API.
       </p>
       {degraded ? <p className="degraded">Live routing or weather fell back to the curated catalog.</p> : null}
       {rows.length ? (

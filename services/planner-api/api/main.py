@@ -84,8 +84,8 @@ def health() -> dict[str, object]:
         "service": "planner-api",
         "database": settings.sqlite_path.is_file(),
         "env": {
-            "ollama_configured": settings.ollama_enabled,
-            "groq_configured": settings.groq_enabled,
+            "ollama_configured": False,
+            "groq_configured": False,
             "anthropic_configured": settings.anthropic_enabled,
             "ors_configured": bool(settings.ors_api_key.strip()),
             "use_live_apis": settings.use_live_apis,

@@ -2,39 +2,42 @@
 
 from travel_planner.config import Settings
 from travel_planner.llm import (
-    GROQ_NODES,
     chat_model_for,
     node_llm_enabled,
     provider_for_node,
     provider_status,
 )
 
+LLM_NODES = (
+    "parse_request",
+    "orchestrator_plan",
+    "orchestrator_revise",
+    "destination_research",
+    "logistics_prelim",
+    "logistics_sequence",
+    "budget",
+    "budget_adjust",
+    "finalize",
+    "review",
+)
 
-def test_missing_groq_key_disables_the_default_provider() -> None:
-    settings = Settings(_env_file=None, llm_provider="groq", groq_api_key="")
-    assert settings.llm_enabled is False
-    assert settings.groq_enabled is False
-    assert provider_status(settings)["enabled"] is False
 
-
-def test_missing_groq_key_disables_review_only() -> None:
+def test_missing_anthropic_key_disables_every_node() -> None:
     settings = Settings(
         _env_file=None,
-        groq_api_key="",
+        anthropic_api_key="",
+        groq_api_key="groq-key",
         ollama_api_key="ollama-key",
         ollama_model="nemotron-3-nano",
     )
-    assert settings.groq_enabled is False
-    assert node_llm_enabled("parse_request", settings) is True
-    assert node_llm_enabled("review", settings) is False
-    with_groq = Settings(
-        _env_file=None,
-        groq_api_key="groq-key",
-        groq_model="openai/gpt-oss-20b",
-        ollama_api_key="",
-    )
-    assert node_llm_enabled("review", with_groq) is True
-    assert node_llm_enabled("parse_request", with_groq) is False
+    assert settings.llm_enabled is False
+    assert provider_status(settings)["enabled"] is False
+    assert provider_status(settings)["groq_enabled"] is False
+    assert provider_status(settings)["ollama_enabled"] is False
+    for node in LLM_NODES:
+        assert provider_for_node(node, settings) == "anthropic"
+        assert node_llm_enabled(node, settings) is False
+        assert chat_model_for(node, settings) is None
 
 
 def test_gemini_api_key_falls_back_to_llm_api_key() -> None:
@@ -48,14 +51,6 @@ def test_gemini_api_key_falls_back_to_llm_api_key() -> None:
     assert settings.resolved_gemini_key == "legacy-gemini"
     assert settings.resolved_gemini_model == "gemini-flash"
     assert settings.gemini_enabled is True
-
-
-def test_review_uses_groq_and_other_nodes_use_ollama() -> None:
-    settings = Settings(_env_file=None)
-    assert provider_for_node("review", settings) == "groq"
-    assert settings.groq_model == "openai/gpt-oss-20b"
-    for node in GROQ_NODES:
-        assert provider_for_node(node, settings) == "ollama"
 
 
 def test_anthropic_provider_uses_claude_for_every_node() -> None:
@@ -103,52 +98,6 @@ def test_anthropic_client_omits_sampling_parameters() -> None:
     assert "top_k" not in payload
 
 
-def test_groq_provider_keeps_non_review_nodes_on_groq() -> None:
-    settings = Settings(_env_file=None, llm_provider="groq")
-    assert provider_for_node("review", settings) == "groq"
-    for node in GROQ_NODES:
-        assert provider_for_node(node, settings) == "groq"
-
-
-def test_cloud_ollama_needs_a_key_and_a_model() -> None:
-    missing_model = Settings(
-        _env_file=None,
-        llm_provider="ollama",
-        ollama_model="",
-        ollama_api_key="ollama-key",
-    )
-    assert missing_model.llm_enabled is False
-    missing_key = Settings(
-        _env_file=None,
-        llm_provider="ollama",
-        ollama_model="nemotron-3-nano",
-        ollama_api_key="",
-    )
-    assert missing_key.ollama_is_cloud is True
-    assert missing_key.llm_enabled is False
-    ready = Settings(
-        _env_file=None,
-        llm_provider="ollama",
-        ollama_model="nemotron-3-nano",
-        ollama_api_key="ollama-key",
-    )
-    assert ready.llm_enabled is True
-    assert provider_for_node("parse_request", ready) == "ollama"
-    assert provider_for_node("review", ready) == "groq"
-
-
-def test_local_ollama_does_not_need_an_api_key() -> None:
-    settings = Settings(
-        _env_file=None,
-        llm_provider="ollama",
-        ollama_base_url="http://127.0.0.1:11434",
-        ollama_model="nemotron-3-nano",
-        ollama_api_key="",
-    )
-    assert settings.ollama_is_cloud is False
-    assert settings.llm_enabled is True
-
-
 def test_ors_stays_off_without_live_apis_or_a_key() -> None:
     with_key = Settings(_env_file=None, use_live_apis=False, ors_api_key="test-key")
     assert with_key.ors_enabled is False
@@ -176,13 +125,12 @@ def test_defaults_match_the_phase_0_decisions() -> None:
     )
     assert settings.live_apis_enabled is False
     assert settings.api_call_budget == 40
-    assert settings.llm_provider == "ollama"
-    assert settings.ollama_model == "nemotron-3-nano"
-    assert settings.ollama_base_url == "https://ollama.com"
+    assert settings.llm_provider == "anthropic"
+    assert settings.anthropic_model == "claude-opus-5-5"
     assert settings.llm_enabled is False
     status = provider_status(settings)
-    assert status["default_provider"] == "ollama"
-    assert status["ollama_model"] == "nemotron-3-nano"
-    assert status["model"] == "nemotron-3-nano"
-    assert status["review_provider"] == "groq"
-    assert status["review_model"] == "openai/gpt-oss-20b"
+    assert status["default_provider"] == "anthropic"
+    assert status["anthropic_model"] == "claude-opus-5-5"
+    assert status["model"] == "claude-opus-5-5"
+    assert status["review_provider"] == "anthropic"
+    assert status["review_model"] == "claude-opus-5-5"

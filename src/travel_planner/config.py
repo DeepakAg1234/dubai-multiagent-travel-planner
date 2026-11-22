@@ -35,10 +35,8 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
-    # Default path is Ollama Cloud. Review uses Groq unless LLM_PROVIDER=anthropic.
-    # LLM_PROVIDER=groq also sends the non-review nodes to Groq.
-    # LLM_PROVIDER=anthropic sends every LLM node, including review, to Claude.
-    llm_provider: str = "ollama"
+    # Every LLM node uses Claude. Ollama and Groq are not called.
+    llm_provider: str = "anthropic"
     groq_api_key: str = ""
     groq_model: str = "openai/gpt-oss-20b"
     anthropic_api_key: str = ""
@@ -96,13 +94,8 @@ class Settings(BaseSettings):
 
     @property
     def llm_enabled(self) -> bool:
-        """True when the default (non-review) provider can make a call."""
-        provider = self.llm_provider.strip().lower()
-        if provider == "groq":
-            return self.groq_enabled
-        if provider == "anthropic":
-            return self.anthropic_enabled
-        return self.ollama_enabled
+        """True when Claude can be called. Other provider keys are ignored."""
+        return self.anthropic_enabled
 
     @property
     def ors_enabled(self) -> bool:

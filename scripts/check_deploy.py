@@ -15,11 +15,6 @@ ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED_ENV = (
     "LLM_PROVIDER",
-    "OLLAMA_API_KEY",
-    "OLLAMA_BASE_URL",
-    "OLLAMA_MODEL",
-    "GROQ_API_KEY",
-    "GROQ_MODEL",
     "ANTHROPIC_API_KEY",
     "ANTHROPIC_MODEL",
     "ORS_API_KEY",
@@ -73,7 +68,7 @@ def main() -> int:
             print(line)
         return 1
     print("deployment checks passed")
-    print("preview: missing OLLAMA_API_KEY and GROQ_API_KEY keep the stub agents")
+    print("preview: a missing ANTHROPIC_API_KEY keeps the stub agents")
     print("preview: USE_LIVE_APIS=false keeps routing and weather on the seed")
     return 0
 

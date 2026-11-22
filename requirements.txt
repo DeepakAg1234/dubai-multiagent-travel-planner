@@ -1,9 +1,6 @@
 # Install list for the Vercel planner-api service. Keep in sync with pyproject.toml.
 langgraph>=1.0
 langchain-core>=1.0
-langchain-google-genai>=3.0
-langchain-groq>=1.0
-langchain-ollama>=0.3
 langchain-anthropic>=1.0
 pydantic>=2.10
 pydantic-settings>=2.7
