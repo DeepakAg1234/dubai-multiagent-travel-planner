@@ -24,10 +24,13 @@ The table is the sourcing **strategy**. [Section 1.2](#12-delivered-catalog-2026
 | Costs (tickets, food) | Official attraction pages and curated price tables | Observed menus for a named restaurant | Category price bands |
 | Weather | Open-Meteo (free, non-commercial) | Open-Meteo archive | Curated monthly climate |
 | Request understanding | LLM (Ollama Cloud `nemotron-3-nano` for most nodes; Groq `openai/gpt-oss-20b` for `review`) | none | Rule-based defaults |
+| Trip description | Typed by the visitor on `/plan` | Optional Sarvam speech-to-text, 30 seconds, model `saaras:v4`. Not a catalog source | The same text box. Planning does not call Sarvam |
 
 Strategy: **build the curated dataset first**, then layer the free APIs on top through repository interfaces. Every record keeps `source`, `as_of`, and a provenance class (`verified`, `api`, `estimated`).
 
 The itinerary auditor reads this same catalog. A pasted name that is not in the seed is reported as unknown. The auditor does not call Wikidata, Nominatim, or a new place API to fill the gap.
+
+A spoken trip description is not catalog data. `POST /api/speech` sends one clip of at most 30 seconds to Sarvam and returns text. That text is user input. It does not add places, prices, or routes. Leave `SARVAM_API_KEY` empty and the call is never made. This is an optional input path, recorded in [decisions.md](./decisions.md), and it does not change the free-source rule for the catalog.
 
 ### 1.1 Free sources and their limits
 
@@ -324,7 +327,7 @@ Notes:
 
 ## 9. Method 8 — User-Provided and Derived Data
 
-- **User input:** budget, days, interests, hotel tier, crowd preference, dates, group size.
+- **User input:** budget, days, interests, hotel tier, crowd preference, dates, group size. On `/plan` the visitor can type that description or speak it. Speech is transcribed by Sarvam (`saaras:v4`, `transcribe`, at most 30 seconds) into the same box. The extractor still runs only after **Fill in my details**. A transcript that is not English stays in the box for editing, because the extractor looks for English phrases.
 - **Derived:** pace limits, meal slots, per-day cost caps, crowd windows (for example, early mornings and weekday afternoons are generally quieter ⚠ validate per attraction), heat windows.
 - **Session data:** previous plan versions in the revision loop are retained in state for the "what changed" view.
 
@@ -338,7 +341,7 @@ The deployment target is Vercel, so the application should be shaped around web-
 
 | Component | Vercel-native choice | Notes |
 | --- | --- | --- |
-| Frontend | Next.js / React | Renders form inputs, live agent timeline, graph view, budget charts, exports |
+| Frontend | Next.js / React | Renders form inputs, an optional 30-second microphone control on `/plan`, live agent timeline, graph view, budget charts, exports |
 | Planner backend | Python FastAPI on Vercel Functions or Vercel Services | Runs LangGraph and streams `AgentEvent` updates to the browser |
 | Streaming | Server-Sent Events over HTTP | Fits one-way progress updates from planner to UI |
 | Static data | Bundled JSON or read-only SQLite | Good for curated seed data; generated DB should be built before deploy or during build |
@@ -389,6 +392,7 @@ Rules: every cost line and every travel leg carries a class. If a value is blend
 | No live hotel source (always) | Curated hotels only | Hotel prices marked estimated |
 | Place flagged closed (for example Museum of the Future) | Exclude from plan, suggest an alternative | Warning with status date |
 | All APIs off | Fully local run | "Offline mode" banner |
+| No `SARVAM_API_KEY`, microphone blocked, or speech-to-text error | Do not transcribe. Keep whatever was typed | Short message on the plan wizard. The steps still work |
 
 Caching reduces repeat calls when a store is configured: places 30 days, routes 7 days, weather 3 hours. MVP has no `CACHE_STORE_URL`.
 
@@ -404,7 +408,8 @@ Caching reduces repeat calls when a store is configured: places 30 days, routes 
 - **Visit Dubai and attraction sites:** Facts and prices can be referenced with source and date. Do not copy long marketing text or images. Avoid scraping without permission.
 - **Public APIs (Nominatim, Overpass, OSRM demo):** Respect usage policies, identify the application, throttle, and cache.
 - **LLM free tiers:** Do not send personal data, because free-tier data may be used for model improvement.
-- **Keys:** Keep ORS and LLM keys in `.env`, out of version control.
+- **Keys:** Keep ORS, LLM, and Sarvam keys in `.env`, out of version control. `SARVAM_API_KEY` is read only by the Next.js speech route.
+- **Spoken audio:** Send Sarvam only the trip description the visitor chose to record, at most 30 seconds. Do not store the clip. Do not log the transcript. Do not ask the visitor to speak a phone number, passport number, or other identifier. The transcript then follows the same path as typed text.
 - **Disclaimer in UI:** Costs are estimates, not quotes. Verify prices and opening hours before travel.
 
 ### 12.1 Running cost
@@ -419,6 +424,7 @@ Running the project costs **$0** and needs no card.
 | Weather | Open-Meteo free | 10,000 calls/day, non-commercial only |
 | LLM | Ollama Cloud `nemotron-3-nano` (most nodes) + Groq `openai/gpt-oss-20b` (`review`) | Ollama usage is billed. Do not send personal data |
 | Hosting | Vercel Services (`web` + `planner-api`) | Confirm current free-tier limits before launch; functions are stateless and have duration/bundle limits |
+| Speech (optional) | Sarvam Saaras v4 | Off unless `SARVAM_API_KEY` is set. Synchronous calls accept 30 seconds. Typing does not call Sarvam. Sarvam may bill the key; that cost is outside the $0 planner path |
 | Runtime persistence | Off unless store URLs are set | No provider chosen yet |
 
 Free hosting and serverless functions may have cold starts or scale-to-zero behavior, so open the app and run one warm-up scenario before a live demo.

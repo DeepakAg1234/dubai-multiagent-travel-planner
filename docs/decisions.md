@@ -78,6 +78,17 @@ The check is deterministic. It does not call an LLM and it does not start a Lang
 
 `POST /api/planner/audits` returns the verdict. `GET /api/planner/audits/example` returns the sample that should fail: Museum of the Future, two invented places, Eid al-Fitr, avoid crowds, Atlantis The Palm, and AED 900.
 
+## Spoken trip description
+
+Added 2026-11-25. The plan wizard accepts a spoken description in addition to typing.
+
+- Provider: Sarvam speech-to-text, model `saaras:v4`, mode `transcribe`, `language_code=unknown`.
+- Endpoint: `POST https://api.sarvam.ai/speech-to-text`, called only from `POST /api/speech` on the Next.js web service.
+- Length: 30 seconds. That is the synchronous API limit. The browser enforces it. Batch and streaming Sarvam APIs are not used.
+- The transcript is appended to the existing description box. **Fill in my details** is unchanged and still requires a click.
+- `SARVAM_API_KEY` is optional. Empty means voice is off. The planner API does not read this variable.
+- Audio is not stored and is not sent to LangGraph. The key is not sent to the browser.
+
 ## What is intentionally not decided
 
 - Which external store, if any, holds cache and checkpoints.

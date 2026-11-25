@@ -5,7 +5,9 @@ Adapted from the Airbnb analysis in [awesome-design-md](https://github.com/volta
 marketplace look with a white canvas, ink type, one coral accent, soft radii and a single shadow tier.
 We do not use Airbnb's logo, wordmark or proprietary font. Tokens live in `app/globals.css` `:root`.
 
-The public pages, including `/` and `/audit`, do not use this file. They use `app/journey.css` (ivory, navy, teal) and speak to someone planning a trip. `/audit` is the "check a chatbot plan" page: a verdict, the names we recognized, the names we could not find, and a rebuilt day list. The coral tokens below stay on the developer dashboard under `/dev`.
+The public pages, including `/`, `/plan`, and `/audit`, do not use this file. They use `app/journey.css` (ivory, navy, teal) and speak to someone planning a trip. `/audit` is the "check a chatbot plan" page: a verdict, the names we recognized, the names we could not find, and a rebuilt day list. The coral tokens below stay on the developer dashboard under `/dev`.
+
+On `/plan`, the description card uses the journey styles. **Fill in my details** stays the teal pill. **Speak** is the ghost pill beside it, with a microphone icon. While recording, that button turns red (`.dj-btn--rec`) and shows the seconds left. The recording stops at 30 seconds. The transcript lands in the same textarea. Do not restyle this control with the coral tokens on this page.
 
 ## Tokens
 

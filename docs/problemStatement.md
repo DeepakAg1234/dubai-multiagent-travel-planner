@@ -6,6 +6,8 @@ The goal is to show how multi-agent architectures solve a real planning problem 
 
 The same rules also power an itinerary auditor at `/audit`. A visitor pastes a Dubai plan from a general chatbot. The auditor matches place names to the curated catalog, prices and routes only the matches, and runs the budget and review rules. The page states what failed, in plain language, and shows a rebuilt plan when the usable places are enough to make one. That is the public proof that a fluent itinerary is not the same as a checked one.
 
+On the plan wizard, the same description can be typed or spoken. Speech is a second way to fill that box. It is not another planning agent. A recording stops at 30 seconds, Sarvam Saaras turns it into text, and the visitor edits the text before the wizard reads it. Typing still works when the microphone or the Sarvam key is unavailable.
+
 Locked product defaults: [decisions.md](./decisions.md). Architecture: [architecture.md](./architecture.md). Runtime sequence: [sequencediagram.md](./sequencediagram.md). Data research and delivered catalog: [research.md](./research.md). Phased work: [implementationplan.md](./implementationplan.md).
 
 ---
@@ -38,6 +40,17 @@ Instead of one agent, the system divides planning among specialized agents for:
 - Quality validation
 
 The application is built with LangGraph and hosted on Vercel: graph-based orchestration, shared state, parallel execution, conditional decisions, a review-feedback loop, and a web UI that streams agent progress from Vercel-hosted APIs.
+
+### 2.1 Entering the request
+
+The plan wizard at `/plan` collects the request in steps, and it also offers one free-text description. That description can be typed or spoken. Both paths land in the same text box.
+
+- **Speak** records from the microphone for at most 30 seconds. That cap is the limit of Sarvam's synchronous speech-to-text API (`POST https://api.sarvam.ai/speech-to-text`, model `saaras:v4`, mode `transcribe`).
+- The browser posts the clip to `POST /api/speech` on the Next.js app. `SARVAM_API_KEY` stays on that route. The planner API never receives the audio.
+- The transcript is written into the description box, after any text that was already there. The visitor can edit it, then choose **Fill in my details**. That button is the existing extractor. Speech does not skip it and does not start a planner run.
+- A denied microphone, a browser that cannot record, an empty Sarvam key, or a failed transcription leaves the typed box working. The server does not store the audio.
+
+The structured extractor looks for English phrases such as days, an AED amount, who is travelling, and interests. A transcript in another language still appears in the box for editing. The visitor can rephrase it before filling the steps.
 
 ---
 
@@ -138,6 +151,12 @@ Implement the agents as nodes in one stateful LangGraph. The graph should demons
 ## 7. End-to-End Workflow
 
 ```
+Typed description, or a spoken clip of at most 30 seconds
+        |
+        v
+ Text in the plan wizard (the visitor can edit it)
+        |
+        v
 User Travel Request
         |
         v
@@ -175,11 +194,12 @@ The Vercel-hosted application should also display:
 
 Execution order implied by the workflow:
 
-1. Parse the user's natural-language request into constraints.
-2. Orchestrator coordinates Destination Research and Logistics (these can run in parallel).
-3. Budget Agent estimates costs from the combined plan.
-4. Review Agent checks constraints.
-5. On pass, return the final itinerary. On revise, loop back and update the plan.
+1. On `/plan`, take a typed description or a spoken clip of at most 30 seconds. Speech becomes text in the same box and does not start the graph.
+2. Parse the user's natural-language request into constraints.
+3. Orchestrator coordinates Destination Research and Logistics (these can run in parallel).
+4. Budget Agent estimates costs from the combined plan.
+5. Review Agent checks constraints.
+6. On pass, return the final itinerary. On revise, loop back and update the plan.
 
 ---
 
@@ -192,6 +212,7 @@ Execution order implied by the workflow:
 | Multi-agent framework | LangGraph running behind Vercel-hosted API endpoints |
 | LLM | Ollama Cloud (`nemotron-3-nano`) for every LLM node except `review` (Groq `openai/gpt-oss-20b`). `LLM_PROVIDER=groq` also sends the other nodes to Groq |
 | Frontend | Next.js / React at `apps/web`, deployed on Vercel. Map view is post-MVP |
+| Speech to text | Optional Sarvam Saaras v4, called only by `POST /api/speech`. Recordings stop at 30 seconds. An empty `SARVAM_API_KEY` leaves typing in place |
 | Backend/API | Vercel Services: `web` + `planner-api` (Python FastAPI). Fallback: one project with a Python function. Public path `/api/planner/*` |
 | Data | Static JSON / read-only SQLite in `data/seed/` (counts and gaps in implementation plan 1.7). Optional **free** runtime APIs: OpenRouteService, Overpass, Open-Meteo |
 | Runtime persistence | Off unless `CACHE_STORE_URL` or `CHECKPOINT_STORE_URL` is set. No Marketplace store chosen yet |
@@ -218,6 +239,7 @@ The project is successful when it can:
 4. Detect and revise at least one itinerary constraint violation.
 5. Visualize which LangGraph node is executing and how shared state changes through the graph.
 6. Check a pasted itinerary from another AI: name unknown places, flag broken rules, and show a rebuilt version when the usable places are enough.
+7. Accept a spoken trip description of up to 30 seconds, show the transcript in the same box as typed text, and keep planning available when speech is off or fails.
 
 **Expected outcome**
 
@@ -236,3 +258,4 @@ A working, interactive Vercel deployment that helps technical and nontechnical a
 - Catalog and map data stay on free sources. No Google Maps Platform and no discontinued hotel APIs. Non-review LLM calls use Ollama Cloud (`nemotron-3-nano`). Review uses Groq `openai/gpt-oss-20b`.
 - Vercel functions are stateless. Do not write cache, checkpoints, or exports to the deployed filesystem. Durable resume and runtime cache stay off unless store URLs are set.
 - The deployed demo calls Ollama Cloud (`https://ollama.com`) for every LLM node except `review`. Review calls Groq `openai/gpt-oss-20b`. A missing `OLLAMA_API_KEY` or `GROQ_API_KEY` leaves that provider's Phase 3 stubs in place. Do not point production at a localhost Ollama server.
+- Spoken input is optional and capped at 30 seconds. The browser records the clip and `POST /api/speech` forwards it to Sarvam. The key never reaches the browser, the audio is not written to disk, and the planner graph is unchanged. A missing `SARVAM_API_KEY` only disables the microphone path.

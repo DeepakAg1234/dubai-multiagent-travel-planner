@@ -269,7 +269,7 @@ Exit check: the same request completes with APIs on and off. Failures degrade gr
 Tasks:
 
 1. `services/planner-api`: expose a FastAPI streaming endpoint that starts a planner run and sends `AgentEvent`s as SSE.
-2. `apps/web`: Next.js input panel with free text, optional overrides (days, budget, interests, start date, hotel tier, avoid crowds), toggles for live APIs, and demo "force revision" presets tied to catalog facts (tight budget, Future Museum, Eid / National Day).
+2. `apps/web`: Next.js input panel with free text, optional overrides (days, budget, interests, start date, hotel tier, avoid crowds), toggles for live APIs, and demo "force revision" presets tied to catalog facts (tight budget, Future Museum, Eid / National Day). The public `/plan` wizard later gained a 30-second spoken description beside that text. See Voice input below. The dev input panel is unchanged.
 3. Live agent timeline: consume SSE events and update React state (status, duration, collapsible output summary).
 4. Graph view: Mermaid render with the active node highlighted.
 5. State inspector: key `TripState` slices (constraints, candidates, draft, budget, holiday notes) as they change.
@@ -321,6 +321,8 @@ Tasks:
 | 3 | Realistic schedules and budgets from available data | Rule checks pass, provenance on all cost lines |
 | 4 | At least one violation detected and revised | Forced-revision demo and graph path tests |
 | 5 | Visible active node and state changes | Next.js timeline, graph view, state inspector |
+| 6 | A pasted itinerary can be checked without starting the graph | `/audit` and `tests/test_audit.py` |
+| 7 | A spoken description of up to 30 seconds becomes editable text, and typing still works when speech is off | Plan wizard **Speak** control, `POST /api/speech`, empty `SARVAM_API_KEY` returns 503 |
 
 Exit check: the checklist is all green, the eval set meets agreed thresholds (for example 100% budget compliance or flagged, 0 closed places, no duplicates), and a fresh clone runs offline using the README steps.
 
@@ -339,6 +341,29 @@ Shipped on top of the Phase 2 rules. It is not a new agent and it does not re-cu
 
 Exit check: `pytest tests/test_audit.py` passes offline. The sample verdict is `still_blocked`, Museum of the Future is absent from the rebuilt activities, and a paste with no catalog names does not grow a new trip.
 
+## Voice input
+
+Shipped on the public plan wizard. It is not a new agent, and it does not re-curate the seed or change the prompts.
+
+The problem it solves: some visitors would rather say the trip than type it. The wizard already turns a sentence into days, budget, travellers, interests, pace, and hotel tier. Speech only has to produce that sentence.
+
+| Piece | Role |
+| --- | --- |
+| `apps/web/components/plan/VoiceNote.tsx` | Microphone button. Records with `MediaRecorder`, stops at 30 seconds, posts the clip |
+| `apps/web/app/api/speech/route.ts` | Holds `SARVAM_API_KEY`. Forwards one file to Sarvam `saaras:v4` in `transcribe` mode. Does not store the audio |
+| `apps/web/lib/speech.ts` | Shared limit, file checks, transcript merge, and error copy. Covered by `lib/speech.test.ts` |
+| `PlanWizard` description box | Receives the transcript after any text already typed. **Fill in my details** is still a separate click |
+
+Behaviour:
+
+1. The visitor can type, speak, or do both. A transcript is appended. It does not wipe the box.
+2. The recording timer starts after the microphone is open, and it stops the recorder at 30 seconds even if the visitor keeps talking.
+3. Sarvam detects the language (`language_code=unknown`) and returns the spoken language. The detail extractor still looks for English phrases, so a non-English transcript stays editable in the box.
+4. With no key, the route returns 503 and the button explains that typing still works.
+5. The clip is not logged. A failure log line contains the HTTP status only.
+
+Exit check: `npm test --prefix apps/web` covers the 30-second constant, appending a transcript, and the missing-key message. On `/plan`, **Speak** sits beside **Fill in my details**. `POST /api/speech` without `SARVAM_API_KEY` returns 503. The route is not under `/api/planner`, so the planner service never receives audio.
+
 ## Risks and Mitigations
 
 | Risk | Impact | Mitigation |
@@ -355,6 +380,9 @@ Exit check: `pytest tests/test_audit.py` passes offline. The sample verdict is `
 | Revision loop never converges | Cost and latency | `max_revisions` cap, finalize with warnings |
 | Hallucinated venues | Untrustworthy output | LLM selects only from shortlisted IDs, validated against the DB. The auditor reports pasted names that are not in the catalog |
 | Prompt injection via place text | Instruction hijack | Delimited data fields, no tool use driven by place text |
+| Spoken clip longer than Sarvam's synchronous limit | The transcription request fails | The browser stops at 30 seconds. The route also rejects a file over 2 MB |
+| Sarvam key missing or the microphone is blocked | The visitor cannot dictate | Voice is optional. The typed description and the step wizard still work |
+| A transcript in a language the extractor does not read | **Fill in my details** finds nothing | The words stay in the box for editing. The visitor can rephrase them in English |
 
 ## Suggested Order of Work (Critical Path)
 

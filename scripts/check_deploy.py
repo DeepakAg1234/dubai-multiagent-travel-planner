@@ -58,6 +58,19 @@ def main() -> int:
     for name in REQUIRED_ENV:
         if name not in example:
             problems.append(f".env.example is missing {name}")
+    if "SARVAM_API_KEY" not in example:
+        problems.append(".env.example is missing SARVAM_API_KEY")
+    speech = ROOT / "apps" / "web" / "app" / "api" / "speech" / "route.ts"
+    if not speech.is_file():
+        problems.append("web speech route is missing")
+    for row in rewrites:
+        if not isinstance(row, dict):
+            continue
+        source = str(row.get("source", ""))
+        destination = row.get("destination")
+        service = destination.get("service") if isinstance(destination, dict) else ""
+        if source.startswith("/api/speech") and service == "planner-api":
+            problems.append("/api/speech must stay on the web service")
     gitignore = (ROOT / ".gitignore").read_text(encoding="utf-8")
     if "data/*.sqlite" not in gitignore:
         problems.append("generated sqlite must stay out of git")

@@ -66,8 +66,17 @@ Set the same names as `.env.example` on **Preview** and **Production**. The dash
 | `CACHE_STORE_URL` | empty | empty |
 | `CHECKPOINT_STORE_URL` | empty | empty |
 | `LANGSMITH_TRACING` | unset | unset |
+| `SARVAM_API_KEY` | empty, unless the preview should speak | set, on the web service only |
 
 `LLM_PROVIDER=groq` also sends the non-review nodes to Groq. Health (`GET /api/planner/health`) reports whether keys are present. It must not return key values.
+
+### Spoken descriptions
+
+`SARVAM_API_KEY` is read by the Next.js route `POST /api/speech`. Do not put it only on `planner-api`. The planner service never transcribes.
+
+`/api/speech` is not matched by the `/api/planner/*` rewrite, so the audio stays on `web`. A 30-second clip is well under the 4.5 MB request-body limit. The browser stops the recording at 30 seconds, and the route rejects anything over 2 MB.
+
+Leave the key empty and the wizard still plans from typed text. `POST /api/speech` then returns 503 and does not call Sarvam. The route must not log the key, the audio, or the transcript.
 
 ## Steps
 
@@ -82,7 +91,7 @@ Set the same names as `.env.example` on **Preview** and **Production**. The dash
    npm run build
    ```
 
-   `check_deploy.py` confirms the two services, the SQLite build command, the 300-second duration, the `/api/planner` rewrite, and that `.env.example` names every variable the API reads. GitHub Actions already runs this on push and pull request (`.github/workflows/ci.yml`).
+   `check_deploy.py` confirms the two services, the SQLite build command, the 300-second duration, the `/api/planner` rewrite, that `.env.example` names every variable the API reads, and that `SARVAM_API_KEY` is documented and `/api/speech` is not rewritten to the planner. GitHub Actions already runs this on push and pull request (`.github/workflows/ci.yml`).
 
 2. **Link one Vercel project** to this repo. Root directory is the repository root, not `apps/web`. `vercel.json` at the root is what defines both services. Do not create a second Vercel project for the API.
 
@@ -98,6 +107,7 @@ Set the same names as `.env.example` on **Preview** and **Production**. The dash
    - Send a request with no trip length. The clarification prompt appears in the same session. Refreshing the page is not expected to resume that run.
    - Confirm `OLLAMA_BASE_URL` is not localhost and that no response writes a file on the server.
    - Open `/audit`, choose **Try a sample that should fail**, and confirm the page names places it cannot find and a cost above the pasted budget. The check is `POST /api/planner/audits` and does not need model keys.
+   - Open `/plan`. **Speak** is next to **Fill in my details**. With `SARVAM_API_KEY` empty, speaking returns a message that typing still works, and `POST /api/speech` is 503. With a key set, a clip of 30 seconds or less returns a transcript in the description box. The planner run starts only after the visitor continues through the wizard.
 
 6. **Promote to production** only after that preview passes. `vercel --prod` or promote the preview deployment. Production uses the same build, with the real model keys.
 
@@ -113,7 +123,8 @@ Set the same names as `.env.example` on **Preview** and **Production**. The dash
 | Missing days | Clarification in the same browser session. |
 | Offline data | `USE_LIVE_APIS=false`. Routing and weather come from the seed. |
 | Audit page | `/audit` sample reports unknown places and does not require `OLLAMA_API_KEY` or `GROQ_API_KEY`. |
-| Secrets | Keys absent from logs, the health body, and the client bundle. |
+| Secrets | Keys absent from logs, the health body, and the client bundle. `SARVAM_API_KEY` is absent from the browser bundle. |
+| Speech | `/plan` shows **Speak**. Empty key: 503 from `/api/speech`, typing still works. Set key: a clip no longer than 30 seconds becomes text in the same box. |
 | Duration | The example run finishes inside 300 seconds, including cold start. |
 
 ## If the preview fails
@@ -127,6 +138,7 @@ Set the same names as `.env.example` on **Preview** and **Production**. The dash
 | Run dies around 300 seconds | Cap revisions, keep `USE_LIVE_APIS=false`, and confirm the UI is consuming the SSE stream rather than waiting for one JSON body. |
 | Services beta will not start the Python service | Fall back to one project and one Python function, same URL prefix. Keep the Next.js app as the only public UI. |
 | Models never run in production | `OLLAMA_API_KEY` and `GROQ_API_KEY` are set on Production, and `OLLAMA_BASE_URL` is `https://ollama.com`. |
+| Speak does nothing useful | `SARVAM_API_KEY` is set on the web service, not only on `planner-api`. The recording is 30 seconds or shorter. A 503 means the key is missing, and typing is the fallback. |
 
 ## Later, only if the product needs it
 

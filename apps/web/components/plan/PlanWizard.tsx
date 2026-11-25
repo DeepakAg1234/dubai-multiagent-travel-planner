@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 
+import { VoiceNote } from "@/components/plan/VoiceNote";
 import { Arrow, Back, Check, Family, Group, Heart, Spark, User, Users } from "@/components/site/Icons";
 import { Photo } from "@/components/site/Photo";
 import { altFor, INTERESTS, pick, photoForInterest } from "@/lib/images";
+import { mergeTranscript } from "@/lib/speech";
 import {
   composeRequest,
   EMPTY_DRAFT,
@@ -91,6 +93,7 @@ function Wizard({ initialDraft, initialStep }: { initialDraft: Draft; initialSte
   const [error, setError] = useState("");
   const [text, setText] = useState("");
   const [found, setFound] = useState<string[] | null>(null);
+  const description = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
     saveDraft(draft, step);
@@ -148,6 +151,12 @@ function Wizard({ initialDraft, initialStep }: { initialDraft: Draft; initialSte
     setFound(items);
   }
 
+  function applyTranscript(spoken: string) {
+    setText((current) => mergeTranscript(current, spoken));
+    setFound(null);
+    requestAnimationFrame(() => description.current?.focus());
+  }
+
   const last = step === STEPS.length - 1;
 
   return (
@@ -200,18 +209,21 @@ function Wizard({ initialDraft, initialStep }: { initialDraft: Draft; initialSte
             <summary>
               <Spark width={20} height={20} /> Or describe your trip in your own words
             </summary>
-            <p className="dj-muted" style={{ fontSize: 15 }}>
+            <p className="dj-muted" id="trip-description-hint" style={{ fontSize: 15 }}>
               Example: &ldquo;Four days in Dubai with my wife and daughter, AED 5,000 budget, culture and beaches,
-              affordable hotel, relaxed pace.&rdquo;
+              affordable hotel, relaxed pace.&rdquo; Type it, or speak for up to 30 seconds.
             </p>
             <textarea
+              ref={description}
               className="dj-textarea"
               value={text}
               onChange={(e) => setText(e.target.value)}
               aria-label="Describe your trip"
+              aria-describedby="trip-description-hint"
               placeholder="Tell us about your trip"
             />
-            <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
+            <div className="dj-nl-actions">
+              <VoiceNote onTranscript={applyTranscript} />
               <button type="button" className="dj-btn dj-btn--sm" onClick={readText} disabled={!text.trim()}>
                 Fill in my details
               </button>

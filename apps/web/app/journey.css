@@ -204,6 +204,13 @@ button.dj-chip:hover { border-color: var(--navy); }
 .dj-nl summary { cursor: pointer; font-weight: 600; color: var(--navy); list-style: none; display: flex; align-items: center; gap: 10px; min-height: 40px; }
 .dj-nl summary::-webkit-details-marker { display: none; }
 .dj-nl textarea { width: 100%; min-height: 100px; }
+.dj-nl-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.dj-voice-note { margin: 0; flex: 1 0 100%; font-size: 14px; color: var(--teal-dark); }
+.dj-voice-note--bad { color: var(--bad); }
+.dj-btn--rec { background: var(--bad); color: #fff; }
+.dj-btn--rec:hover { background: #8e1c16; }
+.dj-rec-dot { width: 8px; height: 8px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 0 rgba(255,255,255,.7); animation: dj-rec 1.2s ease infinite; }
+@keyframes dj-rec { 50% { opacity: .35; } }
 .dj-q h1 { font-size: clamp(30px, 4vw, 44px); margin: 6px 0 10px; }
 .dj-field { display: grid; gap: 6px; }
 .dj-field > span, .dj-label { font-size: 14px; font-weight: 600; color: var(--navy); }

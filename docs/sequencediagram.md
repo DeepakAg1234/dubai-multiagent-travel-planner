@@ -22,7 +22,7 @@ sequenceDiagram
     participant G as LangGraph StateGraph
     participant Node as Agent node
 
-    User->>UI: Free-text request plus optional overrides
+    User->>UI: Free-text request, or a transcript of a clip no longer than 30 seconds, plus optional overrides
     UI->>API: POST /api/planner/runs
     API->>Svc: run(request)
     Svc->>G: stream(initial TripState)
@@ -302,3 +302,35 @@ sequenceDiagram
 ```
 
 `GET /api/planner/audits/example` only returns the sample text. The browser then posts it to the same check.
+
+---
+
+## 6. Speaking a trip description
+
+This happens on `/plan`, before any planner run. The microphone is optional. Typing uses the same box and never calls Sarvam.
+
+The browser records at most 30 seconds, which is the limit of Sarvam's synchronous speech-to-text API. `POST /api/speech` lives on the Next.js web service. It is not rewritten to the planner API. The Sarvam key stays on the server. The audio is discarded after the transcript comes back. **Fill in my details** still runs the existing text extractor, and only a later submit starts the graph in section 1.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor User
+    participant UI as Plan wizard
+    participant Speech as POST /api/speech
+    participant Sarvam as Sarvam Saaras v4
+
+    User->>UI: Speak, or keep typing
+    UI->>UI: Record, stop at 30 seconds
+    UI->>Speech: One audio clip
+    alt SARVAM_API_KEY is set
+        Speech->>Sarvam: file, model saaras:v4, mode transcribe
+        Sarvam-->>Speech: transcript and language code
+        Speech-->>UI: transcript
+        UI-->>User: Text appended in the description box
+    else Key missing, mic blocked, or Sarvam error
+        Speech-->>UI: Short error, no audio stored
+        UI-->>User: Keep the typed description
+    end
+    User->>UI: Edit the text, then Fill in my details
+    Note over UI: The planner graph has not started.
+```

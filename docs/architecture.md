@@ -17,6 +17,7 @@ Companion to [problemStatement.md](./problemStatement.md). Data sourcing is in [
 | **Review can say no** | The review node can route back to earlier nodes. The loop is bounded. |
 | **Observable** | Every node emits events (start, output summary, state diff) that the Vercel-hosted Next.js UI renders live. |
 | **A pasted plan can be refused** | `/audit` matches a chatbot itinerary to the catalog and runs the same budget and review rules. Unknown names and failed checks are shown. The repair keeps only usable places. |
+| **Speech fills the same box** | A spoken description is transcribed before planning. It is not a graph node. The transcript is editable text, capped at 30 seconds. |
 
 Non-goals: booking, live prices, flights, multi-city trips, user accounts.
 
@@ -27,6 +28,8 @@ Non-goals: booking, live prices, flights, multi-city trips, user accounts.
 ```mermaid
 flowchart LR
     U[User] --> UI[Next.js UI on Vercel]
+    UI --> SPEECH["POST /api/speech"]
+    SPEECH --> SARVAM[(Sarvam Saaras v4)]
     UI --> API[Planner API on Vercel Functions / Services]
     API --> SVC[Planner Service]
     SVC --> G[LangGraph Workflow]
@@ -44,8 +47,8 @@ flowchart LR
 
 ### Layers
 
-1. **Presentation**: Next.js / React app deployed on Vercel. Collects the request, shows live agent activity, renders the itinerary and budget. `/audit` is the non-technical path: paste a plan from another AI and read a verdict.
-2. **API boundary**: Vercel-hosted HTTP endpoints expose planner runs, streamed events, exports, and optional resume actions. The browser never imports Python or LangGraph internals.
+1. **Presentation**: Next.js / React app deployed on Vercel. Collects the request, shows live agent activity, renders the itinerary and budget. `/audit` is the non-technical path: paste a plan from another AI and read a verdict. `/plan` can also record up to 30 seconds and turn it into text through `POST /api/speech` before the visitor submits the same description.
+2. **API boundary**: Vercel-hosted HTTP endpoints expose planner runs, streamed events, exports, and optional resume actions. The browser never imports Python or LangGraph internals. Speech is a separate Next.js route on the web service. It is not proxied to the planner API.
 3. **Service**: A thin Python `PlannerService` that builds the graph, runs it, and yields events.
 4. **Orchestration**: The LangGraph workflow (nodes, edges, routing functions, state).
 5. **Agents**: Node functions. Each wraps a prompt, an LLM call (structured output), and a set of tools.
@@ -485,6 +488,45 @@ Wikidata and Nominatim run only during curation. Runtime enrichment stays OpenRo
 
 Provenance badges: ✅ verified, 🌐 API-derived, ≈ estimated.
 
+### Spoken trip description
+
+The public plan wizard (`apps/web/components/plan/PlanWizard.tsx`) keeps one description box. **Speak** is an extra control beside **Fill in my details**. It does not replace typing, and it does not call the planner.
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant UI as Plan wizard
+    participant Speech as POST /api/speech
+    participant Sarvam as Sarvam Saaras v4
+
+    User->>UI: Speak, or type
+    UI->>UI: MediaRecorder, stop at 30 seconds
+    UI->>Speech: audio clip
+    Speech->>Sarvam: multipart file, model saaras:v4, mode transcribe
+    Sarvam-->>Speech: transcript
+    Speech-->>UI: transcript
+    UI->>UI: Append into the description box
+    User->>UI: Edit, then Fill in my details
+```
+
+| Piece | Responsibility |
+| --- | --- |
+| `VoiceNote` | Asks for the microphone, records with `MediaRecorder`, stops at 30 seconds, and posts one clip |
+| `POST /api/speech` | Checks size and type, then calls Sarvam with `SARVAM_API_KEY`. Returns `{ transcript, language_code }` |
+| `mergeTranscript` | Keeps text the visitor already typed and appends the new transcript |
+| `extractFromText` | Unchanged. It still runs only when the visitor chooses **Fill in my details** |
+
+Limits and failures:
+
+- The synchronous Sarvam endpoint accepts 30 seconds. The button stops the recording at `RECORDING_LIMIT_MS` (30000). A file over 2 MB is rejected before the provider call. Vercel's 4.5 MB request-body limit is not the product limit.
+- `language_code` is `unknown`, so Sarvam detects the spoken language. Mode is `transcribe`, so the words stay in that language. The wizard's detail extractor looks for English phrases. A transcript in another language stays in the box for the visitor to edit.
+- Audio is not written to disk, not logged, and not sent to LangGraph. Logs record the upstream status code only.
+- An empty `SARVAM_API_KEY` returns 503. The typed box still works. A denied microphone, a missing recorder, or a provider error shows a short message and leaves the typed text in place.
+- Locally, Next does not load the repo-root `.env` by itself. The speech route reads `SARVAM_API_KEY` from that file when the web process does not already have it, and it does not copy any other name out of the file. On Vercel the web service environment is the source.
+- `/api/speech` is served by the `web` service. The `/api/planner/*` rewrite does not apply, so the clip never reaches the Python service.
+
+The agent prompts are unchanged. After the visitor confirms the text, the planner receives the same natural-language request it already received from the wizard.
+
 ### Planner API
 
 The browser calls a Vercel-hosted planner API rather than running LangGraph in the frontend.
@@ -523,6 +565,7 @@ class AgentEvent(BaseModel):
 | Budget impossible (below hotel floor) | Report minimum feasible budget, return best-effort plan with a clear warning |
 | Revision loop exhausted | Finalize with remaining violations listed as warnings |
 | Missing critical input | `ask_user` interrupt, or documented defaults |
+| Microphone denied, Sarvam key missing, or transcription failed | Leave the typed description in place and show a short message. Do not start a planner run |
 | Prompt injection via place text | Place descriptions are treated as data, passed in delimited fields, and never allowed to alter instructions or tool use |
 
 Graph-level: per-node timeouts and a recursion limit set on the compiled graph as a hard stop.
@@ -531,7 +574,7 @@ Graph-level: per-node timeouts and a recursion limit set on the compiled graph a
 
 ## 13. Configuration and Security
 
-- Local `.env` / `.env.local` for development and Vercel project environment variables for deployment: `LLM_PROVIDER`, `OLLAMA_API_KEY`, `OLLAMA_MODEL`, `OLLAMA_BASE_URL`, `GROQ_API_KEY`, `GROQ_MODEL`, `GEMINI_API_KEY`, `GEMINI_MODEL`, `ORS_API_KEY`, `USE_LIVE_APIS`, cache/checkpoint store URLs, and any storage tokens.
+- Local `.env` / `.env.local` for development and Vercel project environment variables for deployment: `LLM_PROVIDER`, `OLLAMA_API_KEY`, `OLLAMA_MODEL`, `OLLAMA_BASE_URL`, `GROQ_API_KEY`, `GROQ_MODEL`, `GEMINI_API_KEY`, `GEMINI_MODEL`, `ORS_API_KEY`, `USE_LIVE_APIS`, `SARVAM_API_KEY`, cache/checkpoint store URLs, and any storage tokens. `SARVAM_API_KEY` is read only by the Next.js speech route. Leave it empty to disable voice.
 - Settings loaded via `pydantic-settings`. Missing keys disable the related provider rather than failing.
 - Keep keys out of version control (`.env` in `.gitignore`, `.env.example` with placeholders only).
 - Never log keys or full prompts containing user data at default log level.
@@ -568,7 +611,7 @@ Multi Agent Travel Planner/
 │  └─ research.md
 ├─ apps/
 │  └─ web/                    # Next.js app deployed on Vercel
-│     ├─ app/                 # App Router pages and API-facing UI code
+│     ├─ app/                 # App Router pages, planner proxy, and POST /api/speech
 │     ├─ components/
 │     └─ lib/
 ├─ services/
@@ -634,6 +677,8 @@ During early implementation, the Python package can live at the repo root. Befor
 | Bounded revision loop | Predictable cost and latency | May finalize with warnings |
 | Repository interfaces over direct API calls | Swappable and testable providers | Some extra boilerplate |
 | Vercel-native web app over Streamlit | Deployable previews, production URL, web-native streaming UI | Requires a React/Next.js UI instead of Streamlit's quick widgets |
+| Sarvam synchronous speech-to-text | One short request, no new agent, same text box as typing | 30-second cap. Longer speech would need the batch or streaming API |
+| Speech route on the web service | The Sarvam key stays out of the browser and out of the planner process | The planner API cannot transcribe. That is intentional |
 | External runtime persistence | Works with stateless Vercel functions and scale-to-zero | More setup than local SQLite/diskcache |
 
 ---

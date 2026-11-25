@@ -50,3 +50,5 @@ export const Pin = (p: P) =>
   base(p, [<path key="a" d="M12 21s-6-5.2-6-10a6 6 0 0112 0c0 4.8-6 10-6 10z" />, <circle key="b" cx="12" cy="11" r="2" />]);
 export const Spark = (p: P) => base(p, <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM18 16l.8 2.2L21 19l-2.2.8L18 22l-.8-2.2L15 19l2.2-.8z" />);
 export const Plane = (p: P) => base(p, <path d="M3 13l18-8-6 15-3-6z M12 14l9-9" />);
+export const Mic = (p: P) =>
+  base(p, [<path key="a" d="M12 3a3 3 0 00-3 3v6a3 3 0 006 0V6a3 3 0 00-3-3z" />, <path key="b" d="M6 11a6 6 0 0012 0M12 17v4" />]);
