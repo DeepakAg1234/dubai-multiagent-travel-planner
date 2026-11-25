@@ -34,6 +34,22 @@ export function acceptedAudioType(mime: string): boolean {
   return base === "video/webm" || base === "video/mp4";
 }
 
+/**
+ * Sarvam matches the multipart content type exactly. `audio/webm;codecs=opus`
+ * from MediaRecorder is rejected even when the bytes are a short, valid clip.
+ */
+export function baseAudioType(mime: string): string {
+  const base = mime.split(";")[0]?.trim().toLowerCase() ?? "";
+  if (base.startsWith("audio/")) return base;
+  if (base === "video/webm" || base === "video/mp4") return base;
+  return "audio/webm";
+}
+
+export async function sarvamAudioFile(file: File): Promise<File> {
+  const type = baseAudioType(file.type);
+  return new File([await file.arrayBuffer()], recordingFilename(type), { type });
+}
+
 export function speechFailureMessage(status: number): string {
   if (status === 503) return "Voice input is off until a Sarvam key is set. You can still type your trip.";
   if (status === 401 || status === 403) return "Sarvam rejected the key. You can still type your trip.";

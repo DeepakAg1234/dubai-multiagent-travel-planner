@@ -5,7 +5,7 @@ import {
   SARVAM_MODEL,
   SARVAM_SPEECH_URL,
   acceptedAudioType,
-  recordingFilename,
+  sarvamAudioFile,
   speechFailureMessage,
   transcriptFromSarvam,
 } from "@/lib/speech";
@@ -44,7 +44,7 @@ export async function POST(request: Request) {
   }
 
   const outbound = new FormData();
-  outbound.append("file", file, recordingFilename(file.type));
+  outbound.append("file", await sarvamAudioFile(file));
   outbound.append("model", SARVAM_MODEL);
   outbound.append("mode", "transcribe");
   outbound.append("language_code", "unknown");
@@ -63,7 +63,8 @@ export async function POST(request: Request) {
   }
 
   if (!upstream.ok) {
-    console.error(`speech-to-text failed: ${upstream.status}`);
+    const detail = await upstream.text().catch(() => "");
+    console.error(`speech-to-text failed: ${upstream.status} ${detail.replace(/\s+/g, " ").slice(0, 300)}`);
     const status = upstream.status === 401 || upstream.status === 403 || upstream.status === 429 ? upstream.status : 502;
     return Response.json({ error: speechFailureMessage(upstream.status) }, { status });
   }

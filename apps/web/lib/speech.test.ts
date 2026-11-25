@@ -7,9 +7,11 @@ import {
   MAX_AUDIO_BYTES,
   RECORDING_LIMIT_MS,
   acceptedAudioType,
+  baseAudioType,
   mergeTranscript,
   readSpeechResponse,
   recordingFilename,
+  sarvamAudioFile,
   speechFailureMessage,
   transcriptFromSarvam,
 } from "./speech.ts";
@@ -58,6 +60,18 @@ describe("recording shape", () => {
     assert.equal(acceptedAudioType("video/webm"), true);
     assert.equal(acceptedAudioType("video/mp4"), true);
     assert.equal(acceptedAudioType("text/plain"), false);
+  });
+
+  it("drops the codec parameter Sarvam rejects", async () => {
+    assert.equal(baseAudioType("audio/webm;codecs=opus"), "audio/webm");
+    assert.equal(baseAudioType("audio/mp4;codecs=opus"), "audio/mp4");
+    assert.equal(baseAudioType("video/webm"), "video/webm");
+    assert.equal(baseAudioType(""), "audio/webm");
+    const source = new File([Uint8Array.from([1, 2, 3, 4])], "clip.webm", { type: "audio/webm;codecs=opus" });
+    const clean = await sarvamAudioFile(source);
+    assert.equal(clean.type, "audio/webm");
+    assert.equal(clean.name, "trip.webm");
+    assert.equal(clean.size, 4);
   });
 });
 

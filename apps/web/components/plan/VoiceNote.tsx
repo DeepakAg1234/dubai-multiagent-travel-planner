@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 import { Mic } from "@/components/site/Icons";
-import { RECORDING_LIMIT_MS, readSpeechResponse, recordingFilename } from "@/lib/speech";
+import { RECORDING_LIMIT_MS, baseAudioType, readSpeechResponse, recordingFilename } from "@/lib/speech";
 
 type Phase = "idle" | "starting" | "recording" | "sending";
 
@@ -86,8 +86,9 @@ export function VoiceNote({ onTranscript }: { onTranscript: (transcript: string)
     setPhase("sending");
     phaseRef.current = "sending";
     show("Turning speech into text.", "ok");
+    const type = baseAudioType(blob.type);
     const body = new FormData();
-    body.append("file", blob, recordingFilename(blob.type));
+    body.append("file", new Blob([blob], { type }), recordingFilename(type));
     try {
       const response = await fetch("/api/speech", { method: "POST", body });
       const result = await readSpeechResponse(response);
