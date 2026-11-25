@@ -113,22 +113,116 @@ export function composeRequest(draft: Draft): string {
   return lines.join("\n");
 }
 
+const SMALL_NUMBERS: Record<string, number> = {
+  a: 1,
+  an: 1,
+  one: 1,
+  two: 2,
+  three: 3,
+  four: 4,
+  five: 5,
+  six: 6,
+  seven: 7,
+  eight: 8,
+  nine: 9,
+  ten: 10,
+};
+
+/** Traveler steppers stop at these. A spoken count above them is clamped, not dropped. */
+const MAX_ADULTS = 12;
+const MAX_CHILDREN = 8;
+
+const HINDI_LETTER = "\\u0900-\\u097F";
+
+/** Hindi trip words the English reader already understands. Longer phrases go first. */
+const HINDI_TRIP_WORDS: [string, string][] = [
+  ["समुद्र\\s*तट|समुद्र", " beach "],
+  ["बीचस|बीचेस|बीचेज़|बीचेज", " beach "],
+  ["लोगों", " people "],
+  ["लोग", " people "],
+  ["बच्चों|बच्चे|बच्चा", " child "],
+  ["बेटियाँ|बेटियां|बेटियों", " daughter "],
+  ["बेटी", " daughter "],
+  ["बेटे|बेटा", " son "],
+  ["कपल्स|कपल", " couple "],
+  ["हनीमून", " honeymoon "],
+  ["पत्नी", " wife "],
+  ["पति", " husband "],
+  ["दोस्तों|दोस्त", " friends "],
+  ["अकेले", " solo "],
+  ["परिवार", " family "],
+  ["दिनों|दिन", " days "],
+  ["रातें|रात", " nights "],
+  ["बजट", " budget "],
+  ["संस्कृति", " culture "],
+  ["इतिहास", " heritage "],
+  ["खरीदारी|शॉपिंग", " shopping "],
+  ["खाना|भोजन", " food "],
+  ["रेगिस्तान", " desert "],
+  ["सफारी", " safari "],
+  ["आरामदायक|आराम", " relaxed "],
+  ["किफायती|सस्ती|सस्ता", " affordable "],
+  ["लग्जरी|लक्जरी", " luxury "],
+  ["शाकाहारी", " vegetarian "],
+  ["एक", " one "],
+  ["दो", " two "],
+  ["तीन", " three "],
+  ["चार", " four "],
+  ["पांच|पाँच", " five "],
+  ["छह|छः", " six "],
+  ["सात", " seven "],
+  ["आठ", " eight "],
+  ["नौ", " nine "],
+  ["दस", " ten "],
+];
+
+const DEVANAGARI_DIGITS = "०१२३४५६७८९";
+
+/**
+ * Rewrites common Hindi trip words into the English phrases `extractFromText` already reads.
+ * Bare बीच is left alone: in Hindi it means "between", while बीचस is the spoken word "beaches".
+ */
+export function glossTripWords(text: string): string {
+  let next = text.replace(/[०-९]/g, (digit) => String(DEVANAGARI_DIGITS.indexOf(digit)));
+  for (const [pattern, word] of HINDI_TRIP_WORDS) {
+    next = next.replace(new RegExp(`(?<![${HINDI_LETTER}])(?:${pattern})(?![${HINDI_LETTER}])`, "g"), word);
+  }
+  return next;
+}
+
+function smallNumber(token: string): number | null {
+  if (token in SMALL_NUMBERS) return SMALL_NUMBERS[token];
+  const value = Number(token);
+  if (!Number.isInteger(value) || value < 1 || value > 10) return null;
+  return value;
+}
+
+function leadingCount(lower: string, unit: string): number | null {
+  const match = lower.match(new RegExp(`\\b([1-9]|10|one|two|three|four|five|six|seven|eight|nine|ten|a|an)\\s+(?:${unit})\\b`));
+  if (!match) return null;
+  return smallNumber(match[1]);
+}
+
+function clampCount(value: number, min: number, max: number): number {
+  return Math.min(max, Math.max(min, value));
+}
+
 /** Best-effort, local reading of a free-text description so the fields can be pre-filled and corrected. */
 export function extractFromText(text: string): { patch: Partial<Draft>; found: string[] } {
   const patch: Partial<Draft> = {};
   const found: string[] = [];
-  const lower = text.toLowerCase();
-  const words: Record<string, number> = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7 };
+  const prepared = glossTripWords(text);
+  const lower = prepared.toLowerCase();
 
   const days = lower.match(/\b([1-7]|one|two|three|four|five|six|seven)[\s-]*(?:days?|nights?)\b/);
   if (days) {
-    patch.days = words[days[1]] ?? Number(days[1]);
+    patch.days = SMALL_NUMBERS[days[1]] ?? Number(days[1]);
     found.push(`${patch.days} days`);
   }
   const budget = lower.match(/(?:aed|budget(?: of)?)\s*[:=]?\s*([\d,]{3,})|([\d,]{3,})\s*aed/);
   if (budget) {
     patch.budget = (budget[1] ?? budget[2]).replace(/,/g, "");
-    patch.budgetMode = /per person|each|pp\b/.test(lower) ? "per_person" : "total";
+    patch.budgetMode = /\bper person\b|\beach\b|\bpp\b/.test(lower) ? "per_person" : "total";
     found.push(`AED ${Number(patch.budget).toLocaleString()}`);
   }
   const date = text.match(/\b(20\d{2}-\d{2}-\d{2})\b/);
@@ -137,23 +231,47 @@ export function extractFromText(text: string): { patch: Partial<Draft>; found: s
     found.push(`starting ${date[1]}`);
   }
   const kids = /\b(daughter|son|kids?|child(?:ren)?|toddler|baby)\b/.test(lower);
-  const partner = /\b(wife|husband|partner|girlfriend|boyfriend|honeymoon|romantic)\b/.test(lower);
+  const couple = /\b(couple|wife|husband|partner|girlfriend|boyfriend|honeymoon|romantic)\b/.test(lower);
+  const childCount = leadingCount(lower, "kids?|children|child|daughters?|sons?|toddlers?|babies|baby");
+  const adultCount = leadingCount(lower, "adults?");
+  const peopleCount = leadingCount(lower, "people|persons|travell?ers|guests");
   if (kids) {
     patch.who = "family";
-    patch.adults = partner || /\bwe\b|\bour\b|\bfamily\b/.test(lower) ? 2 : 1;
-    patch.children = 1;
-    found.push("family trip");
-  } else if (partner || /\bcouple\b/.test(lower)) {
+    patch.children = clampCount(childCount ?? 1, 1, MAX_CHILDREN);
+    if (adultCount) patch.adults = clampCount(adultCount, 1, MAX_ADULTS);
+    else if (couple || /\bwe\b|\bour\b|\bfamily\b/.test(lower)) patch.adults = 2;
+    else if (peopleCount) patch.adults = clampCount(peopleCount - patch.children, 1, MAX_ADULTS);
+    else patch.adults = 1;
+    found.push(
+      childCount == null && patch.children === 1
+        ? "family trip"
+        : `family, ${patch.adults} adults and ${patch.children} ${patch.children === 1 ? "child" : "children"}`,
+    );
+  } else if (couple) {
     patch.who = "couple";
-    patch.adults = 2;
+    patch.adults = clampCount(adultCount ?? 2, 1, MAX_ADULTS);
+    patch.children = 0;
     found.push("couple");
-  } else if (/\b(solo|alone|by myself)\b/.test(lower)) {
+  } else if (/\b(solo|alone|by myself)\b/.test(lower) || peopleCount === 1) {
     patch.who = "solo";
     patch.adults = 1;
+    patch.children = 0;
     found.push("solo");
-  } else if (/\bfriends\b/.test(lower)) {
+  } else if (/\bfriends\b/.test(lower) || (peopleCount != null && peopleCount >= 3 && peopleCount < 6)) {
     patch.who = "friends";
-    found.push("friends");
+    patch.adults = clampCount(peopleCount ?? adultCount ?? 3, 1, MAX_ADULTS);
+    patch.children = 0;
+    found.push(peopleCount != null && peopleCount !== 3 ? `${peopleCount} people` : "friends");
+  } else if (peopleCount != null && peopleCount >= 6) {
+    patch.who = "group";
+    patch.adults = clampCount(peopleCount, 1, MAX_ADULTS);
+    patch.children = 0;
+    found.push(`${peopleCount} people`);
+  } else if (peopleCount === 2) {
+    patch.who = "couple";
+    patch.adults = 2;
+    patch.children = 0;
+    found.push("couple");
   }
   const interests: string[] = [];
   const rules: [string, RegExp][] = [

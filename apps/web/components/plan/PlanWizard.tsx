@@ -10,6 +10,13 @@ import { Photo } from "@/components/site/Photo";
 import { altFor, INTERESTS, pick, photoForInterest } from "@/lib/images";
 import { mergeTranscript } from "@/lib/speech";
 import {
+  DIRECT_READING,
+  TRANSLATION_UNAVAILABLE,
+  isEnglishReading,
+  readingPlan,
+  translateForDetails,
+} from "@/lib/translate";
+import {
   composeRequest,
   EMPTY_DRAFT,
   draftRaw,
@@ -92,7 +99,11 @@ function Wizard({ initialDraft, initialStep }: { initialDraft: Draft; initialSte
   const [step, setStep] = useState(initialStep);
   const [error, setError] = useState("");
   const [text, setText] = useState("");
+  const [english, setEnglish] = useState("");
+  const [englishFor, setEnglishFor] = useState("");
   const [found, setFound] = useState<string[] | null>(null);
+  const [notice, setNotice] = useState<string | null>(null);
+  const [reading, setReading] = useState(false);
   const description = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
@@ -141,19 +152,63 @@ function Wizard({ initialDraft, initialStep }: { initialDraft: Draft; initialSte
     router.push("/trip");
   }
 
-  function readText() {
-    const { patch, found: items } = extractFromText(text);
-    if (!items.length) {
+  function applyReading(result: { patch: Partial<Draft>; found: string[] }, planningText: string) {
+    if (!result.found.length) {
       setFound([]);
       return;
     }
-    setDraft((d) => ({ ...d, ...patch, notes: d.notes || text.trim() }));
-    setFound(items);
+    setDraft((d) => ({ ...d, ...result.patch, notes: planningText }));
+    setFound(result.found);
+  }
+
+  function clearEnglish() {
+    setEnglish("");
+    setEnglishFor("");
+  }
+
+  async function readText() {
+    const raw = text.trim();
+    if (!raw || reading) return;
+    setReading(true);
+    setFound(null);
+    setNotice(null);
+    try {
+      const plan = readingPlan(raw, english, englishFor);
+      if (plan.action === "extract") {
+        clearEnglish();
+        applyReading(extractFromText(plan.text), plan.text);
+        return;
+      }
+      if (plan.action === "use-english") {
+        applyReading(extractFromText(plan.text), plan.text);
+        return;
+      }
+      const translated = await translateForDetails(raw);
+      if (translated && isEnglishReading(translated)) {
+        setEnglish(translated);
+        setEnglishFor(raw);
+        applyReading(extractFromText(translated), translated);
+        return;
+      }
+      clearEnglish();
+      const local = extractFromText(raw);
+      if (local.found.length) {
+        setNotice(DIRECT_READING);
+        applyReading(local, raw);
+        return;
+      }
+      setFound([]);
+      setNotice(TRANSLATION_UNAVAILABLE);
+    } finally {
+      setReading(false);
+    }
   }
 
   function applyTranscript(spoken: string) {
     setText((current) => mergeTranscript(current, spoken));
+    clearEnglish();
     setFound(null);
+    setNotice(null);
     requestAnimationFrame(() => description.current?.focus());
   }
 
@@ -211,21 +266,45 @@ function Wizard({ initialDraft, initialStep }: { initialDraft: Draft; initialSte
             </summary>
             <p className="dj-muted" id="trip-description-hint" style={{ fontSize: 15 }}>
               Example: &ldquo;Four days in Dubai with my wife and daughter, AED 5,000 budget, culture and beaches,
-              affordable hotel, relaxed pace.&rdquo; Type it, or speak for up to 30 seconds.
+              affordable hotel, relaxed pace.&rdquo; Type it, or speak for up to 30 seconds. English is read directly.
+              Another language is translated into English first.
             </p>
             <textarea
               ref={description}
               className="dj-textarea"
               value={text}
-              onChange={(e) => setText(e.target.value)}
+              onChange={(e) => {
+                const next = e.target.value;
+                setText(next);
+                setFound(null);
+                setNotice(null);
+                if (next.trim() !== englishFor) clearEnglish();
+              }}
               aria-label="Describe your trip"
               aria-describedby="trip-description-hint"
               placeholder="Tell us about your trip"
             />
+            {english ? (
+              <label className="dj-field">
+                <span>In English</span>
+                <textarea
+                  className="dj-textarea"
+                  value={english}
+                  onChange={(e) => {
+                    setEnglish(e.target.value);
+                    setFound(null);
+                    setNotice(null);
+                  }}
+                  aria-label="In English"
+                  aria-describedby="english-reading-hint"
+                />
+                <small id="english-reading-hint">Edit this if the translation is off, then choose Fill in my details again.</small>
+              </label>
+            ) : null}
             <div className="dj-nl-actions">
               <VoiceNote onTranscript={applyTranscript} />
-              <button type="button" className="dj-btn dj-btn--sm" onClick={readText} disabled={!text.trim()}>
-                Fill in my details
+              <button type="button" className="dj-btn dj-btn--sm" onClick={readText} disabled={!text.trim() || reading} aria-busy={reading}>
+                {reading ? (readingPlan(text, english, englishFor).action === "translate" ? "Translating\u2026" : "Reading\u2026") : "Fill in my details"}
               </button>
               <span className="dj-muted" style={{ fontSize: 14 }}>
                 We&rsquo;ll fill in what we can find. Check each step and edit anything.
@@ -233,6 +312,7 @@ function Wizard({ initialDraft, initialStep }: { initialDraft: Draft; initialSte
             </div>
             {found && found.length > 0 ? (
               <div className="dj-notice dj-notice--teal" role="status">
+                {notice ? <p style={{ margin: "0 0 8px" }}>{notice}</p> : null}
                 <b>We picked up:</b>
                 <div className="dj-found" style={{ marginTop: 8 }}>
                   {found.map((f) => (
@@ -245,7 +325,7 @@ function Wizard({ initialDraft, initialStep }: { initialDraft: Draft; initialSte
             ) : null}
             {found && found.length === 0 ? (
               <p className="dj-notice" role="status">
-                We couldn&rsquo;t pick out any details. Try adding days, budget or interests, or use the steps below.
+                {notice ?? "We couldn\u2019t pick out any details. Try adding days, budget or interests, or use the steps below."}
               </p>
             ) : null}
           </details>

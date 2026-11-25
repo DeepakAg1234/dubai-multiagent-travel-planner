@@ -77,7 +77,7 @@ In the input panel:
 
 A request with no trip length stops at the clarification prompt. Answer in the same browser session. Durable resume needs `CHECKPOINT_STORE_URL`.
 
-**Plan a trip** (`/plan`) collects the same request in steps. The card **Or describe your trip in your own words** takes typed text or a recording of up to 30 seconds. **Speak** posts the clip to `POST /api/speech`, which calls Sarvam Saaras (`saaras:v4`, transcribe) and appends the transcript to the box. **Fill in my details** is unchanged. With `SARVAM_API_KEY` empty, that route returns 503 and typing still works. The audio is not stored.
+**Plan a trip** (`/plan`) collects the same request in steps. The card **Or describe your trip in your own words** takes typed text or a recording of up to 30 seconds. **Speak** posts the clip to `POST /api/speech`, which calls Sarvam Saaras (`saaras:v4`, transcribe) and appends the transcript to the box. **Fill in my details** reads English directly. Another language is translated through `POST /api/translate`, shown in **In English**, and the details are taken from that English. The original wording stays in the first box. With `SARVAM_API_KEY` empty, that route returns 503 and typing still works. The audio is not stored.
 
 **Check a plan** (`/audit`) is the public counterpart. Paste a Dubai itinerary from ChatGPT or Claude, or load the sample. The page says which names are not in the catalog, which rules the plan breaks, and what a rebuilt version changed. The check does not call a model. It uses the catalog, the fare graph, and the review rules. `POST /api/planner/audits` is the endpoint. The sample text is `GET /api/planner/audits/example`.
 

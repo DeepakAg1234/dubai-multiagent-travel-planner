@@ -85,7 +85,7 @@ Added 2026-11-25. The plan wizard accepts a spoken description in addition to ty
 - Provider: Sarvam speech-to-text, model `saaras:v4`, mode `transcribe`, `language_code=unknown`.
 - Endpoint: `POST https://api.sarvam.ai/speech-to-text`, called only from `POST /api/speech` on the Next.js web service.
 - Length: 30 seconds. That is the synchronous API limit. The browser enforces it. Batch and streaming Sarvam APIs are not used.
-- The transcript is appended to the existing description box. **Fill in my details** is unchanged and still requires a click.
+- The transcript is appended to the existing description box. **Fill in my details** still requires a click. English is read as written. Any other language is translated with Sarvam (`POST /api/translate`, Mayura v1 with `auto`, then Sarvam-Translate), shown in an editable **In English** box, and the details are read from that English. The planner notes are that English. If translation fails, recognized Hindi trip words can still fill the steps, and no English line is shown.
 - `SARVAM_API_KEY` is optional. Empty means voice is off. The planner API does not read this variable.
 - Audio is not stored and is not sent to LangGraph. The key is not sent to the browser.
 

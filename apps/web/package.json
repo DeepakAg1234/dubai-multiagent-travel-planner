@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test": "node --experimental-strip-types --test lib/run-model.test.ts lib/speech.test.ts"
+    "test": "node --experimental-strip-types --test lib/run-model.test.ts lib/speech.test.ts lib/trip.test.ts lib/translate.test.ts"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

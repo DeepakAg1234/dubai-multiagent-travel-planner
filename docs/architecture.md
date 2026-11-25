@@ -498,15 +498,25 @@ sequenceDiagram
     participant UI as Plan wizard
     participant Speech as POST /api/speech
     participant Sarvam as Sarvam Saaras v4
+    participant Translate as POST /api/translate
 
     User->>UI: Speak, or type
     UI->>UI: MediaRecorder, stop at 30 seconds
     UI->>Speech: audio clip
     Speech->>Sarvam: multipart file, model saaras:v4, mode transcribe
     Sarvam-->>Speech: transcript
-    Speech-->>UI: transcript
+    Speech-->>UI: transcript in the spoken language
     UI->>UI: Append into the description box
-    User->>UI: Edit, then Fill in my details
+    alt English
+        User->>UI: Fill in my details
+        UI->>UI: Read that English
+    else Another language
+        User->>UI: Fill in my details
+        UI->>Translate: original text
+        Translate-->>UI: English
+        UI->>User: Show In English
+        UI->>UI: Read that English
+    end
 ```
 
 | Piece | Responsibility |
@@ -514,12 +524,13 @@ sequenceDiagram
 | `VoiceNote` | Asks for the microphone, records with `MediaRecorder`, stops at 30 seconds, and posts one clip |
 | `POST /api/speech` | Checks size and type, then calls Sarvam with `SARVAM_API_KEY`. Returns `{ transcript, language_code }` |
 | `mergeTranscript` | Keeps text the visitor already typed and appends the new transcript |
-| `extractFromText` | Unchanged. It still runs only when the visitor chooses **Fill in my details** |
+| `POST /api/translate` | Turns a non-English description into English. Mayura first, then Sarvam-Translate |
+| `extractFromText` | Runs on the English text when the visitor chooses **Fill in my details** |
 
 Limits and failures:
 
 - The synchronous Sarvam endpoint accepts 30 seconds. The button stops the recording at `RECORDING_LIMIT_MS` (30000). A file over 2 MB is rejected before the provider call. Vercel's 4.5 MB request-body limit is not the product limit.
-- `language_code` is `unknown`, so Sarvam detects the spoken language. Mode is `transcribe`, so the words stay in that language. The wizard's detail extractor looks for English phrases. A transcript in another language stays in the box for the visitor to edit.
+- `language_code` is `unknown`, so Sarvam detects the spoken language. Mode is `transcribe`, so the words stay in that language in the box. **Fill in my details** reads English as written. For any other script it calls `POST /api/translate`, shows the result in **In English**, and reads the details from that English. The visitor can edit the English and fill again. If translation fails, a short Hindi word list can still fill recognized details, and the English line stays hidden.
 - Audio is not written to disk, not logged, and not sent to LangGraph. Logs record the upstream status code only.
 - An empty `SARVAM_API_KEY` returns 503. The typed box still works. A denied microphone, a missing recorder, or a provider error shows a short message and leaves the typed text in place.
 - Locally, Next does not load the repo-root `.env` by itself. The speech route reads `SARVAM_API_KEY` from that file when the web process does not already have it, and it does not copy any other name out of the file. On Vercel the web service environment is the source.
