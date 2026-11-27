@@ -2,6 +2,34 @@
 
 A multi-agent trip planner for Dubai. LangGraph runs the agents. Python calculates prices, fares, hours, and review checks against the curated catalog in `data/seed/`. A missing model key keeps the deterministic stubs, so a fresh clone plans offline.
 
+## Stack
+
+| Layer | What runs |
+| --- | --- |
+| Orchestration | One LangGraph `StateGraph`. Agents are nodes. There is no second agent framework |
+| Model | Claude Opus 5.5 (`claude-opus-5-5`) through the Anthropic API, via LangChain `ChatAnthropic`. Every node, including review, uses this model. Opus 5.5 does not accept temperature. An empty `ANTHROPIC_API_KEY` keeps the deterministic stubs |
+| Planner | Python 3.12, FastAPI, Pydantic. The service is `services/planner-api` |
+| Numbers and rules | Deterministic Python over the seed catalog. The model does not invent prices, fares, hours, or pass/fail results |
+| UI | Next.js 16 (App Router) and React 19 in `apps/web`. The itinerary day view includes a Leaflet map |
+| Data | Curated JSON in `data/seed/`, built into read-only `data/dubai.sqlite` |
+| Speech and translation | Sarvam, called only from Next.js (`POST /api/speech`, `POST /api/translate`). Not a graph node |
+| Hosting | One Vercel project, two services (`web` and `planner-api`). `/api/planner/*` rewrites to the API. Function duration is 300 seconds |
+
+Ollama and Groq are not called. Older notes in `docs/` still name that earlier split. This file is the current model decision.
+
+## Decisions
+
+These are the product choices the running planner implements.
+
+- **The model picks from the catalog. Code owns the numbers.** Agents interpret the request, choose from shortlists, sequence the days, and explain the result. Prices, fares, opening hours, holiday effects, and review blockers are Python. Each cost line carries provenance: `verified`, `api`, or `estimated`.
+- **Budget is the group total, and the hotel is inside it.** Flights are excluded. If the request omits a budget, the planner assumes AED 5000 for the group and records that assumption.
+- **Research and stay search run in parallel, then the days are ordered.** After `orchestrator_plan`, `destination_research` and `logistics_prelim` both run. `logistics_sequence` waits for both, then orders the day with the Metro and tram graph.
+- **Review can send the plan back, and the loop is capped.** Rules run first. A plan problem (closed or reopening place, holiday, duplicate, crowding) goes to `orchestrator_revise` and research runs again. A budget-only problem goes to `budget_adjust` and costs are recomputed. If both are present, the plan route wins. After `MAX_REVISIONS` (default 3) the plan is finalized with the warnings listed.
+- **A pasted itinerary is checked without a model.** `/audit` matches names to the catalog and runs the same budget and review rules. It does not start a LangGraph run.
+- **Speech fills the same text box.** A recording of up to 30 seconds is transcribed before planning. Audio is not stored and is not sent to the planner. Typing still works with no Sarvam key.
+- **Offline is the default.** `USE_LIVE_APIS=false` keeps routing and weather on the seed. OpenRouteService, Overpass, and Open-Meteo are optional enrichments.
+- **Nothing is booked, and nothing is stored for the visitor.** No accounts, no flights, no live hotel prices, no multi-city trips. Exports are downloads. Runtime cache and durable resume stay off unless `CACHE_STORE_URL` and `CHECKPOINT_STORE_URL` point at an external store. No store is selected. A missing trip length is answered in the same browser session.
+
 ## Success criteria
 
 | # | Criterion | Where it shows up |
